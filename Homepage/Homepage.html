@@ -6,80 +6,106 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<div align="right">
-			<label for="lang-select">Select:</label>
-			<select id="lang-select">
-				<option value="en">English</option>
-				<option value="bn">বাংলা</option>
-				<option value="hi">हिन्दी</option>
-			</select>
-			<button id="theme-toggle">Dark Mode</button>
-		</div>
-		<h1 class="welcome" id="welcome"></h1>
-		<img src="Picture1.jpg" alt="Photo" width="180px" align="right">
-		<h2 id="personal-details"></h2>
-		<ul>
-			<li id="name"></li>
-			<li id="father"></li>
-			<li id="mother"></li>
-			<li id="address"></li>
-			<li id="district"></li>
-			<li id="pin"></li>
-			<li id="state"></li>
-			<li id="date-of-birth"></li>
-		</ul>
-		<h2 id="qualifications"></h2>
-		<table width="100%">
+		<table class="header">
 			<tr>
-				<th id="degree"></th>
-				<th id="institution"></th>
-				<th id="parent-institution"></th>
-				<th id="grade"></th>
+				<td id="welcome" colspan="2">
+					<h1 id="welcome-text">Welcome to the website of Soumyabrata Bhattacharjee</h1>
+					<!-- Commenting multilingual support due to various issues
+					<label for="lang-select">Select language:</label>
+					<select id="lang-select">
+						<option value="en">English</option>
+						<option value="bn">বাংলা</option>
+						<option value="hi">हिन्दी</option>
+					</select> -->
+					<label for="theme-select">Select theme:</label>
+					<select id="theme-select">
+						<option value="light">Light</option>
+						<option value="dark">Dark</option>
+					</select>
+				</td>
 			</tr>
-			<tr>
-				<td id="btech"></td>
-				<td id="aot"></td>
-				<td id="makaut"></td>
-				<td id="cgpa"></td>
-			</tr>
-			<tr>
-				<td id="higher-secondary"></td>
-				<td id="hs-school"></td>
-				<td id="wbchse"></td>
-				<td id="hs-percent"></td>
-			</tr>
-			<tr>
-				<td id="madhyamik"></td>
-				<td id="mp-school"></td>
-				<td id="wbbse"></td>
-				<td id="mp-percent"></td>
+			<tr id="menu">
+				<td id="visited"><b>Homepage</b></td>
+				<td><a id="converter-link" href="../Universal Converter/Converter.html">Universal Converter</a></td>
 			</tr>
 		</table>
-		<h2 id="expertise"></h2>
-		<ul>
-			<li id="web-dev"></li>
-			<li id="soft-dev"></li>
-			<li id="graphics"></li>
-			<li id="os"></li>
-			<li id="others"></li>
-			<li id="hobbies"></li>
-		</ul>
-		<h2 id="projects"></h2>
-		<button id="univ-conv">Universal Converter</button>
-		<h2 id="contact"></h2>
-		<ul>
-			<li><span id="personal-email"></span> <a href="mailto:soumyabrata8974@gmail.com">soumyabrata8974@gmail.com</a></li>
-			<li><span id="academic-email"></span> <a href="mailto:soumyabrata.bhattacharjee.23@aot.edu.in">soumyabrata.bhattacharjee.23@aot.edu.in</a></li>
-			<li><span id="phone"></span> <a href="tel:+917908876512">+91 79088 76512</a></li>
-		</ul>
-		<h3 id="websites"></h3>
-		<ul>
-			<li><a id="fb" href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a></li>
-			<li><a id="gh" href="https://github.com/soumyabrata2006">GitHub</a></li>
-			<li><a id="li" href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308/">LinkedIn</a></li>
-			<li><a id="ex" href="https://x.com/soumyabhatta_of">X</a></li>
-		</ul>
-		<script src="lang-data.js"></script>
+		<table class="content">
+			<tr>
+				<td>
+					<div class="table-box">
+						<h2 id="qualifications">Academic qualifications</h2>
+						<table class="qual-table">
+							<tr>
+								<th id="degree">Degree</th>
+								<th id="institution">Institution</th>
+								<th id="parent-institution">Parent institution</th>
+								<th id="grade">Grade</th>
+							</tr>
+							<tr>
+								<td id="btech">Bachelor of Technology in<br>Computer Science and Engineering (pursuing 2nd year)</td>
+								<td id="aot">Academy of Technology</td>
+								<td id="makaut">Maulana Abul Kalam Azad University of Technology</td>
+								<td id="cgpa">CGPA: 7.984</td>
+							</tr>
+							<tr>
+								<td id="higher-secondary">Higher Secondary</td>
+								<td id="school">Burdwan Town School</td>
+								<td id="wbchse">West Bengal Council of Higher Secondary Education</td>
+								<td id="hs-percent">87.4%</td>
+							</tr>
+							<tr>
+								<td id="madhyamik">Madhyamik</td>
+								<td id="school">Burdwan Town School</td>
+								<td id="wbbse">West Bengal Board of Secondary Education</td>
+								<td id="mp-percent">88%</td>
+							</tr>
+						</table>
+						<h2 id="web-dev">Web development</h2>
+						<ul>
+							<li id="frontend">Frontend: HTML, CSS, JavaScript</li>
+							<li id="backend">Backend (learning): Node.js, Django</li>
+							<li id="database">Database: TXT</li>
+						</ul>
+						<h2 id="expertise">Other Areas of Expertise</h2>
+						<ul>
+							<li id="soft-dev">Software development: C, Java, Python</li>
+							<li id="graphics">Graphics: FreeCAD, Inkscape</li>
+							<li id="os">Operating systems: Windows 11</li>
+							<li id="others">Other software: VS Code, Notepad++, GCC, Microsoft Office</li>
+							<li id="hobbies">Hobbies: Photography, Travel</li>
+						</ul>
+					</div>
+				</td>
+				<td>
+					<div class="table-box">
+						<img src="Picture1.jpg" alt="Profile photo" width="150px" align="right">
+						<h2 id="personal-details">Personal details</h2>
+						<ul>
+							<li id="name">Name: Soumyabrata Bhattacharjee</li>
+							<li id="father">Father: Rajesh Bhattacharjee</li>
+							<li id="mother">Mother: Papiya Bhattacharya</li>
+							<li id="address">Address: Natunpally, Ward 8, P.O. Burdwan-713101</li>
+							<li id="district">District: Purba Bardhaman</li>
+							<li id="state">State: West Bengal, India</li>
+							<li id="date-of-birth">Date of Birth: 27 May 2006</li>
+							<li id="lang-spoken">Languages: Bengali (first), English (second), Hindi</li>
+						</ul>
+						<h2 id="contact">Contact me</h2>
+						<ul>
+							<li><span id="personal-email">Personal email:</span> <a href="mailto:soumyabrata8974@gmail.com">soumyabrata8974@gmail.com</a></li>
+							<li><span id="academic-email">Academic email:</span> <a href="mailto:soumyabrata.bhattacharjee.23@aot.edu.in">soumyabrata.bhattacharjee.23@aot.edu.in</a></li>
+							<li><span id="phone">Phone number:</span> <a href="tel:+917908876512">+91 79088 76512</a></li>
+							<li><a id="fb" href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a></li>
+							<li><a id="gh" href="https://github.com/soumyabrata2006">GitHub</a></li>
+							<li><a id="li" href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308/">LinkedIn</a></li>
+							<li><a id="ex" href="https://x.com/soumyabhatta_of">X</a></li>
+						</ul>
+					</div>
+				</td>
+			</tr>
+		</table>
+		<p id="copyright">Copyright © 2022-2025</p>
+		<!-- <script src="lang-data.js"></script> -->
 		<script src="script.js"></script>
 	</body>
 </html>

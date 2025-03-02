@@ -3,55 +3,73 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Universal Converter - Soumya's Website</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="../Homepage/styles.css">
 	</head>
 	<body>
-		<h1 class="welcome" id="welcome">Universal Converter</h1>
-		<table align="center">
+		<table class="header">
 			<tr>
-				<td>
-					<label for="input">Input:</label>
-				</td>
-				<td>
-					<input type="text" id="input">
-				</td>
-				<td>
-					<select id="input-unit">
-						<option value="celsius">Celsius</option>
-						<option value="cm">Centimetres</option>
-						<option value="fahrenheit">Fahrenheit</option>
-						<option value="ft">Feet</option>
-						<option value="km">Kilometres</option>
-						<option value="metres">Metres</option>
+				<td id="welcome" colspan="2">
+					<h1 id="welcome-text">Universal Converter</h1>
+					<label for="theme-select">Select theme:</label>
+					<select id="theme-select">
+						<option value="light">Light</option>
+						<option value="dark">Dark</option>
 					</select>
-					<label for="input-unit">unit</label>
 				</td>
 			</tr>
-			<tr>
-				<td>
-					<label for="output">Output:</label>
-				</td>
-				<td>
-					<input type="text" id="output">
-				</td>
-				<td>
-					<select id="output-unit">
-						<option value="celsius">Celsius</option>
-						<option value="cm">Centimetres</option>
-						<option value="fahrenheit">Fahrenheit</option>
-						<option value="ft">Feet</option>
-						<option value="km">Kilometres</option>
-						<option value="metres">Metres</option>
-					</select>
-					<label for="output-unit">unit</label>
-				</td>
-			</tr>
-			<tr>
-				<td colspan="3" align="center">
-					<button type="submit" id="convert">Convert</button>
-				</td>
+			<tr id="menu">
+				<td><a id="homepage-link" href="../Homepage/Homepage.html">Homepage</a></td>
+				<td id="visited"><b>Universal Converter</b></td>
 			</tr>
 		</table>
+		<div class="box">
+			<table align="center">
+				<tr>
+					<td>
+						<label for="input">Input:</label>
+					</td>
+					<td>
+						<input type="text" id="input">
+					</td>
+					<td>
+						<select id="input-unit">
+							<option value="celsius">Celsius</option>
+							<option value="cm">Centimetres</option>
+							<option value="fahrenheit">Fahrenheit</option>
+							<option value="ft">Feet</option>
+							<option value="km">Kilometres</option>
+							<option value="metres">Metres</option>
+						</select>
+						<label for="input-unit">unit</label>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="output">Output:</label>
+					</td>
+					<td>
+						<input type="text" id="output">
+					</td>
+					<td>
+						<select id="output-unit">
+							<option value="celsius">Celsius</option>
+							<option value="cm">Centimetres</option>
+							<option value="fahrenheit">Fahrenheit</option>
+							<option value="ft">Feet</option>
+							<option value="km">Kilometres</option>
+							<option value="metres">Metres</option>
+						</select>
+						<label for="output-unit">unit</label>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="3" align="center">
+						<button type="submit" id="convert">Convert</button>
+					</td>
+				</tr>
+			</table>
+		</div>
+		<p id="copyright">Copyright © 2022-2025</p>
 		<script src="script.js"></script>
 	</body>
 </html>

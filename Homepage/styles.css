@@ -1,27 +1,77 @@
 body {
-    background-color: #ffffff;
-    color: #000000;
+    background-color: #f0f0f2;;
+    color: black;
     font-family: Arial, sans-serif;
-    table,
-    th,
-    td {
-        border:1px solid black;
-        border-collapse:collapse;
-    }
-    .welcome {
-        text-align:center;
-    }
+	.header {
+		table-layout: fixed;
+		text-align:center;
+		margin: 1.5em auto;
+		width: 80%;
+		background-color: white;
+		border-radius: 0.5em;
+		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+		#welcome {
+			padding: 1.5em 3em;
+		}
+		#menu a {
+			display: block;
+			padding-bottom: 1em;
+			padding-top: 1em;
+			border-radius: 0.5em;
+		}
+		#menu a:hover, #visited {
+			background-color: #f0f0f2;
+		}
+	}
+	.content td {
+		vertical-align: top;
+		height: fit-content;
+	}
+	.box {
+		margin: 0.5em auto;
+		padding: 1.5em;
+		width: 80%;
+		background-color: white;
+		border-radius: 0.5em;
+		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+	}
+	.table-box {
+		margin: 0.5em;
+		padding: 1.5em;
+		background-color: white;
+		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
+	}
+	.qual-table,
+	.qual-table th,
+	.qual-table td {
+		border:1px solid black;
+		border-collapse:collapse;
+		padding: 0.5em;
+	}
+	#copyright {
+		text-align:center;
+	}
 }
-
-body.dark-mode {
-    background-color: #1e1e1e;
-    color: #ffffff;
-    table,
-    th,
-    td {
-        border:1px solid white;
-        border-collapse:collapse;
-    }
+body.dark {
+    background-color: black;
+    color: white;
+	a:link, a:visited {
+		color: white;
+	}
+	.header, box, table-box {
+		background-color: #1a1a1a;
+		border-radius: 0.5em;
+		box-shadow: 2px 3px 7px 2px #1a1a1a05;
+		#menu a:hover, #visited {
+			background-color: black;
+			border-radius: 0.5em;
+		}
+	}
+	.qual-table,
+	.qual-table th,
+	.qual-table td {
+		border:1px solid white;
+	}
 }
 #theme-toggle {
     margin-top: 20px;
