@@ -48,7 +48,16 @@ body {
 		padding: 0.5em;
 	}
 	#copyright {
-		text-align:center;
+		text-align: center;
+	}
+	#input1, #input2, #output1, #output2 {
+		width: 6em;
+	}
+	input {
+		width: 15em;
+	}
+	table {
+		margin: 0 auto;
 	}
 }
 body.dark {
@@ -57,11 +66,11 @@ body.dark {
 	a:link, a:visited {
 		color: white;
 	}
-	.header, box, table-box {
+	.header, .box, .table-box {
 		background-color: #1a1a1a;
 		border-radius: 0.5em;
 		box-shadow: 2px 3px 7px 2px #1a1a1a05;
-		#menu a:hover, #visited {
+		#menu td:hover, #visited {
 			background-color: black;
 			border-radius: 0.5em;
 		}
