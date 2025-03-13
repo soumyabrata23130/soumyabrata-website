@@ -50,12 +50,6 @@ body {
 	#copyright {
 		text-align: center;
 	}
-	#input1, #input2, #output1, #output2 {
-		width: 6em;
-	}
-	input {
-		width: 15em;
-	}
 	table {
 		margin: 0 auto;
 	}
