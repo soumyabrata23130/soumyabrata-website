@@ -12,6 +12,7 @@ body {
 		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
 		#welcome {
 			padding: 1.5em 3em;
+			margin: auto;
 		}
 		#menu a {
 			display: block;
@@ -47,11 +48,15 @@ body {
 		border-collapse:collapse;
 		padding: 0.5em;
 	}
+	.converter-table tr,
+	.converter-table td {
+		margin: auto;
+	}
 	#copyright {
 		text-align: center;
 	}
 	table {
-		margin: 0 auto;
+		margin: auto;
 	}
 }
 body.dark {
