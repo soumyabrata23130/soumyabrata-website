@@ -1,15 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Universal Converter - Soumya's Website</title>
-		<link rel="stylesheet" href="../Homepage/styles.css">
+		<link rel="stylesheet" href="{% static 'styles.css' %}"/>
 	</head>
 	<body>
 		<table class="header">
 			<tr>
 				<td id="welcome" colspan="3">
-					<h1 id="welcome-text">Universal Converter</h1>
+					<h1 id="welcome-text">Converter</h1>
 					<label for="theme-select">Select theme:</label>
 					<select id="theme-select">
 						<option value="light">Light</option>
@@ -18,9 +19,9 @@
 				</td>
 			</tr>
 			<tr id="menu">
-				<td><a id="homepage-link" href="../Homepage/Homepage.html">Homepage</a></td>
-				<td><a id="caesar-cipher-link" href="../Caesar Cipher/Cipher.html">Caesar Cipher</a></td>
-				<td id="visited"><b>Universal Converter</b></td>
+				<td><a id="homepage-link" href="../">Homepage</a></td>
+				<td><a id="caesar-cipher-link" href="../caesar">Caesar Cipher</a></td>
+				<td id="visited"><b>Converter</b></td>
 			</tr>
 		</table>
 		<div class="box">
@@ -75,6 +76,6 @@
 			</table>
 		</div>
 		<p id="copyright">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
-		<script src="script.js"></script>
+		<script src="{% static 'converter/script.js' %}"></script>
 	</body>
 </html>

@@ -1,22 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Homepage - Soumya's Website</title>
-		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="{% static 'styles.css' %}"/>
 	</head>
 	<body>
 		<table class="header">
 			<tr>
 				<td id="welcome" colspan="3">
 					<h1 id="welcome-text">Welcome to the website of Soumyabrata Bhattacharjee</h1>
-					<!-- Commenting multilingual support due to various issues
-					<label for="lang-select">Select language:</label>
-					<select id="lang-select">
-						<option value="en">English</option>
-						<option value="bn">বাংলা</option>
-						<option value="hi">हिन्दी</option>
-					</select> -->
 					<label for="theme-select">Select theme:</label>
 					<select id="theme-select">
 						<option value="light">Light</option>
@@ -26,8 +20,8 @@
 			</tr>
 			<tr id="menu">
 				<td id="visited"><b>Homepage</b></td>
-				<td><a id="caesar-cipher-link" href="../Caesar Cipher/Cipher.html">Caesar Cipher</a></td>
-				<td><a id="converter-link" href="../Universal Converter/Converter.html">Universal Converter</a></td>
+				<td><a id="caesar-cipher-link" href="../caesar">Caesar Cipher</a></td>
+				<td><a id="converter-link" href="../converter">Converter</a></td>
 			</tr>
 		</table>
 		<table class="content">
@@ -79,7 +73,7 @@
 				</td>
 				<td>
 					<div class="table-box">
-						<img src="Picture1.jpg" alt="Profile photo" width="150px" align="right">
+						<img src="{% static 'Picture1.jpg' %}" alt="Profile photo" width="150px" align="right">
 						<h2 id="personal-details">Personal details</h2>
 						<ul>
 							<li id="name">Name: Soumyabrata Bhattacharjee</li>
@@ -106,7 +100,6 @@
 			</tr>
 		</table>
 		<p id="copyright">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
-		<!-- <script src="lang-data.js"></script> -->
-		<script src="script.js"></script>
+		<script src="{% static 'script.js' %}"></script>
 	</body>
 </html>
