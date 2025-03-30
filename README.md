@@ -9,3 +9,11 @@ My Caesar cipher project to encrypt and decrypt a given text with Caesar cipher.
 
 ## Converter
 My converter project to convert from one unit to another for a given quantity.
+
+## Steps to Use
+1. Download Python and Django.
+2. Download the repository as ZIP.
+3. Extract the repository.
+4. Run the terminal at the repository (Windows or Linux).
+5. Type "python manage.py migrate" and then "python manage.py runserver".
+6. Open http://localhost:8000/.
