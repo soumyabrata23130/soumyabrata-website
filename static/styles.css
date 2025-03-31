@@ -48,9 +48,14 @@ body {
 		border-collapse:collapse;
 		padding: 0.5em;
 	}
+	.converter-table {
+		width: 80%;
+		text-align: center;
+	}
 	.converter-table tr,
 	.converter-table td {
 		margin: auto;
+		text-align: center;
 	}
 	#copyright {
 		text-align: center;
