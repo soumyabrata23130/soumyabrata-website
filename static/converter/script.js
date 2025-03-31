@@ -73,29 +73,6 @@ function unitConvert(input, input_prefix, input_unit, output_prefix, output_unit
 	return output
 }
 
-// input and output textboxes for feet-inches
-function feetInches() {
-	const input_unit=document.getElementById('input-unit').value
-	const output_unit=document.getElementById('output-unit').value
-
-	// for input textbox
-	if(input_unit=='ftin') {
-		document.getElementById('input-box').innerHTML=`
-			Input:
-			<input type='text' id='input'>
-			<label for='input'>ft</label>
-			<input type='text' id='input2'>
-			<label for='input2'>in</label>
-		`
-	}
-	else {
-		document.getElementById('input-box').innerHTML=`
-			<label for='input'>Input:</label>
-			<input type='text' id='input'>
-		`
-	}
-}
-
 // select quantity
 document.getElementById('quantity').addEventListener('change', function() {
 	input_prefix=document.getElementById('input-prefix'), output_prefix=document.getElementById('output-prefix')
@@ -137,7 +114,7 @@ document.getElementById('quantity').addEventListener('change', function() {
 	const length=`
 		<option value='select'>select</option>
 		<option value='ft'>feet (ft)</option>
-		<option value='ftin'>feet-inches (ft-in)</option>
+		<option value='in'>inches (in)</option>
 		<option value='m'>metres (m)</option>
 		<option value='mi'>miles (mi)</option>
 	`
@@ -192,7 +169,7 @@ document.getElementById('input-unit').addEventListener('change', function() {
 
 // convert button
 document.getElementById('convert').addEventListener('click', function() {
-	let input=Number(document.getElementById('input').value), input2
+	let input=Number(document.getElementById('input').value)
 	const input_prefix=document.getElementById('input-prefix').value, output_prefix=document.getElementById('output-prefix').value
 	const input_unit=document.getElementById('input-unit').value, output_unit=document.getElementById('output-unit').value
 	let output=0, output2=0 // outputs
@@ -202,27 +179,8 @@ document.getElementById('convert').addEventListener('click', function() {
 		input=0
 	}
 
-	if(input_unit=='ftin') {
-		input2=Number(document.getElementById('input2').value)
-		if(input2==null) {
-			input2=0
-		}
-	}
+	output=unitConvert(input, input_prefix, input_unit, output_prefix, output_unit)
 
-	// from feet-inches
-	if(input_unit=='ftin') {
-		output=unitConvert(input, 'none', 'ft', output_prefix, output_unit)+unitConvert(input, 'none', 'in', output_prefix, output_unit)
-	}
-	// to feet-inches
-	else if(output_unit=='ftin') {
-		output=Math.round(unitConvert(input, input_prefix, input_unit, 'none', 'ft'))
-		output2=Math.round(unitConvert(input, input_prefix, input_unit, 'none', 'in')%12)
-	}
-	//normal case
-	else {
-		output=unitConvert(input, input_prefix, input_unit, output_prefix, output_unit)
-	}
-	
 	// temperature units
 	// Celsius to Fahrenheit
 	if(input_unit=='celsius' && output_unit=='fahrenheit') {
@@ -255,41 +213,19 @@ document.getElementById('convert').addEventListener('click', function() {
 		output=Math.floor(output)
 	}
 
-	if(output_unit=='ftin') {
+	if(output_prefix=='none') {
 		document.getElementById('output').innerHTML=`
-			Output: ${output} ft ${output2} in
+			Output: ${output} ${output_unit}
 		`
 	}
 	else {
-		if(output_prefix=='none') {
-			document.getElementById('output').innerHTML=`
-				Output: ${output} ${output_unit}
-			`
-		}
-		else {
-			document.getElementById('output').innerHTML=`
-				Output: ${output} ${output_prefix}${output_unit}
-			`
-		}
+		document.getElementById('output').innerHTML=`
+			Output: ${output} ${output_prefix}${output_unit}
+		`
 	}
 
-	if(output_unit=='ftin') {
-		document.getElementById('output2').value=output2.toString()
-	}
-
-	if(input_unit=='ftin') {
-		console.log("Input: " + input + " ft " + input2 + " in ")
-	}
-	else {
-		console.log("Input: " + input + " " + input_prefix + input_unit)
-	}
-	
-	if(output_unit=='ftin') {
-		console.log("Output: " + output + " ft " + output2 + " in ")
-	}
-	else {
-		console.log("Output: " + output + " " + output_unit)
-	}
+	console.log("Input: " + input + " " + input_prefix + input_unit)
+	console.log("Output: " + output + " " + output_unit)
 })
 
 // reverse units
@@ -303,9 +239,6 @@ document.getElementById('reverse').addEventListener('click', function() {
 	document.getElementById('input-unit').value=output_unit
 	document.getElementById('output-unit').value=input_unit
 
-	if(document.getElementById('output-unit').value=='ftin') {
-		feetInches()
-	}
 	console.log("Units are reversed")
 })
 
