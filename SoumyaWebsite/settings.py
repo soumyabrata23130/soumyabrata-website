@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'caesar', # caesar cipher
 	'converter', # converter
-	'main' # homepage
+	'main', # homepage
+	'weather', # weather
 ]
 
 MIDDLEWARE = [

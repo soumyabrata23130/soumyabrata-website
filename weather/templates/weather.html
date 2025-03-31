@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Weather - Soumya's Website</title>
+		<link rel="stylesheet" href="{% static 'styles.css' %}">
+	</head>
+	<body>
+		<table class="header">
+			<tr>
+				<td id="welcome" colspan="4">
+					<h1 id="welcome-text">Weather</h1>
+					<label for="theme-select">Select theme:</label>
+					<select id="theme-select">
+						<option value="light">Light</option>
+						<option value="dark">Dark</option>
+					</select>
+				</td>
+			</tr>
+			<tr id="menu">
+				<td><a id="homepage-link" href="../">Homepage</a></td>
+				<td><a id="caesar-link" href="../caesar">Caesar Cipher</a></td>
+				<td><a id="converter-link" href="../converter">Converter</a></td>
+				<td id="visited"><b>Weather</b></td>
+			</tr>
+		</table>
+		<div class="box">
+			<form method="POST">
+				{% csrf_token %} 
+				<div class="input-box">
+					<input type="text" id="input" name="city" value="{{ city|default:'' }}" placeholder="Enter a city" required>
+					<button class="btn btn-default" type="submit" id="get">Get data</button>
+				</div>
+			</form>
+			<div class="output">
+				{% if temp and humidity and pressure %}
+				<h2>Weather data of {{city}}, {{country}}</h2>
+				<ul>
+					<li>Temperature: {{temp}}</li>
+					<li>Feels like: {{temp_feel}}</li>
+					<li>Humidity: {{humidity}}</li>
+					<li>Pressure: {{pressure}}</li>
+					<li>Wind speed: {{speed}}</li>
+				</ul>
+				{% endif %}
+			</div>
+		</div>
+		<p id="copyright">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		<script src="{% static 'script.js' %}"></script>
+		<script src="{% static 'weather/script.js' %}"></script>
+	</body>
+</html>

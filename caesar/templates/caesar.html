@@ -9,7 +9,7 @@
 	<body>
 		<table class="header">
 			<tr>
-				<td id="welcome" colspan="3">
+				<td id="welcome" colspan="4">
 					<h1 id="welcome-text">Caesar Cipher</h1>
 					<label for="theme-select">Select theme:</label>
 					<select id="theme-select">
@@ -21,45 +21,43 @@
 			<tr id="menu">
 				<td><a id="homepage-link" href="../">Homepage</a></td>
 				<td id="visited"><b>Caesar Cipher</b></td>
-				<td><a id="converter-link" href="../converter">Universal Converter</b></td>
+				<td><a id="converter-link" href="../converter">Converter</a></td>
+				<td><a id="weather-link" href="../weather">Weather</a></td>
 			</tr>
 		</table>
 		<div class="box">
 			<form method="POST">
-				{% csrf_token %} 
+				{% csrf_token %}
 				<table class="converter-table">
 					<tr>
-						<td id="input-label">
+						<td class="input-label">
 							<label for="input">Input:</label>
 						</td>
-						<td id="input-box">
+						<td class="input-box">
 							<input type="text" id="input" name="input" value="{{ input|default:'' }}" required>
 						</td>
 					</tr>
 					<tr>
-						<td id="shift-label">
+						<td class="input-label">
 							<label for="shift">Shift letters:</label>
 						</td>
-						<td id="shift-box">
+						<td class="input-box">
 							<input type="text" id="shift" name="shift" value="{{ shift|default:0 }}" required>
 						</td>
 					</tr>
 					<tr>
-						<td id="output-label">
-							<label for="output">Output:</label>
-						</td>
-						<td id="output-box">
-							<input type="text" id="output" name="output" value="{{ output|default:'' }}" readonly>
-						</td>
-					</tr>
-					<tr>
-						<td colspan="3">
+						<td colspan="2" class="buttons">
 							<button type="submit" id="encrypt">Encrypt</button>
-							<button type="submit" id="clear">Clear</button>
 						</td>
 					</tr>
 				</table>
 			</form>
+			<br/>
+			<div class="output">
+				{% if output %}
+				Output: {{output}}
+				{% endif %}
+			</div>
 		</div>
 		<p id="copyright">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
 		<script src="{% static 'script.js' %}"></script>

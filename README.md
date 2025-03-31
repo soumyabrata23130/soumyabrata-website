@@ -8,7 +8,9 @@ The homepage containing résumé-like information about me with contact details.
 My Caesar cipher project to encrypt and decrypt a given text with Caesar cipher.
 
 ## Converter
-My converter project to convert from one unit to another for a given quantity.
+My converter project to convert from one unit to another for a given quantity. Currently supports the following quantities:
+* Information
+* 
 
 ## Steps to Use
 1. Download Python and Django.

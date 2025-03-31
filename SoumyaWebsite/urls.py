@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 	path('', include("main.urls")),
 	path('caesar/', include("caesar.urls")),
-	path('converter/', include("converter.urls"))
+	path('converter/', include("converter.urls")),
+	path('weather', include("weather.urls"))
 ]

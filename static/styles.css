@@ -49,15 +49,20 @@ body {
 		padding: 0.5em;
 	}
 	.converter-table {
-		width: 80%;
-		text-align: center;
-	}
-	.converter-table tr,
-	.converter-table td {
 		margin: auto;
+	}
+	.buttons {
 		text-align: center;
 	}
 	#copyright {
+		text-align: center;
+	}
+	.input-box {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.output {
 		text-align: center;
 	}
 	table {
