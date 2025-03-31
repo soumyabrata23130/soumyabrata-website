@@ -104,7 +104,7 @@ document.getElementById('quantity').addEventListener('change', function() {
 	`
 
 	// information units
-	const information=`
+	const info=`
 		<option value='select'>select</option>
 		<option value='b'>bits (b)</option>
 		<option value='B'>bytes (B)</option>
@@ -119,21 +119,21 @@ document.getElementById('quantity').addEventListener('change', function() {
 		<option value='mi'>miles (mi)</option>
 	`
 	// temperature units
-	const temperature=`
+	const temp=`
 		<option value='select'>select</option>
 		<option value='celsius'>Celsius (C)</option>
 		<option value='fahrenheit'>Fahrenheit (F)</option>
 		<option value='kelvin'>Kelvin (K)</option>
 	`
 
-	if(this.value=='information') {
+	if(this.value=='info') {
 		input_prefix.innerHTML=binary
 		output_prefix.innerHTML=binary
 		input_prefix.value='none'
 		output_prefix.value='none'
 
-		input_unit.innerHTML=information
-		output_unit.innerHTML=information
+		input_unit.innerHTML=info
+		output_unit.innerHTML=info
 	}
 	else if(this.value=='length') {
 		input_prefix.innerHTML=decimal
@@ -144,14 +144,14 @@ document.getElementById('quantity').addEventListener('change', function() {
 		input_unit.innerHTML=length
 		output_unit.innerHTML=length
 	}
-	else if(this.value=='temperature') {
+	else if(this.value=='temp') {
 		input_prefix.innerHTML=decimal
 		output_prefix.innerHTML=decimal
 		input_prefix.value='none'
 		output_prefix.value='none'
 		
-		input_unit.innerHTML=temperature
-		output_unit.innerHTML=temperature
+		input_unit.innerHTML=temp
+		output_unit.innerHTML=temp
 	}
 	else {
 		input_unit.innerHTML=`<option value='select'>select</option>`
@@ -242,7 +242,7 @@ document.getElementById('reverse').addEventListener('click', function() {
 	console.log("Units are reversed")
 })
 
-// clear and reset
+/* clear and reset
 document.getElementById('clear').addEventListener('click', function() {
 	document.getElementById('quantity').value='select'
 	document.getElementById('input').value=''
@@ -253,4 +253,4 @@ document.getElementById('clear').addEventListener('click', function() {
 	document.getElementById('output-unit').value='select'
 
 	console.log("Cleared")
-})
+}) */

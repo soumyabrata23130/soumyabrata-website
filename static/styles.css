@@ -2,41 +2,32 @@ body {
     background-color: #f0f0f2;;
     color: black;
     font-family: Arial, sans-serif;
-	.header {
-		table-layout: fixed;
+	header {
 		text-align:center;
 		margin: 1.5em auto;
-		width: 80%;
+		padding: 0.5em;
+		width: 60%;
 		background-color: white;
 		border-radius: 0.5em;
 		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
-		#welcome {
-			padding: 1.5em 3em;
-			margin: auto;
-		}
-		#menu a {
+		nav a {
 			display: block;
 			padding: 1em;
 		}
-		#menu td:hover, #visited {
+		nav td:hover {
 			background-color: #f0f0f2;
 		}
 	}
-	.content td {
-		vertical-align: top;
-		height: fit-content;
+	table {
+		margin: auto;
+	}
+	.heading {
+		text-align: center;
 	}
 	.box {
 		margin: 0.5em auto;
 		padding: 1.5em;
-		width: 80%;
-		background-color: white;
-		border-radius: 0.5em;
-		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
-	}
-	.table-box {
-		margin: 0.5em;
-		padding: 1.5em;
+		width: 60%;
 		background-color: white;
 		border-radius: 0.5em;
 		box-shadow: 2px 3px 7px 2px rgba(0, 0, 0, 0.02);
@@ -48,13 +39,7 @@ body {
 		border-collapse:collapse;
 		padding: 0.5em;
 	}
-	.converter-table {
-		margin: auto;
-	}
 	.buttons {
-		text-align: center;
-	}
-	#copyright {
 		text-align: center;
 	}
 	.input-box {
@@ -65,7 +50,8 @@ body {
 	.output {
 		text-align: center;
 	}
-	table {
+	footer {
+		text-align: center;
 		margin: auto;
 	}
 }
@@ -75,11 +61,11 @@ body.dark {
 	a:link, a:visited {
 		color: white;
 	}
-	.header, .box, .table-box {
-		background-color: #1a1a1a;
+	header, .box {
+		background-color: darkslategray;
 		border-radius: 0.5em;
 		box-shadow: 2px 3px 7px 2px #1a1a1a05;
-		#menu td:hover, #visited {
+		nav td:hover {
 			background-color: black;
 			border-radius: 0.5em;
 		}

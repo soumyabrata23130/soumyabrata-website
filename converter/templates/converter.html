@@ -8,92 +8,112 @@
 	</head>
 	<body>
 		<header>
-			<table class="header">
-				<tr>
-					<td id="welcome" colspan="4">
-						<h1 id="welcome-text">Soumya's Website</h1>
-						<label for="theme-select">Select theme:</label>
-						<select id="theme-select">
-							<option value="light">Light</option>
-							<option value="dark">Dark</option>
-						</select>
-					</td>
-				</tr>
-				<tr id="menu">
-					<td><a id="caesar-link" href="../">Homepage</a></td>
-					<td><a id="caesar-link" href="../caesar">Caesar Cipher</a></td>
-					<td><a id="converter-link" href="../converter">Converter</a></td>
-					<td><a id="weather-link" href="../weather">Weather</a></td>
-				</tr>
-			</table>	
+			<h1 id="welcome-text">Soumya's Website</h1>
+			<label for="theme-select">Select theme:</label>
+			<select id="theme-select">
+				<option value="light">Light</option>
+				<option value="dark">Dark</option>
+			</select>
+			<nav role="navigation">
+				<table>
+					<tr>
+						<td><a id="caesar-link" href="../">Homepage</a></td>
+						<td><a id="caesar-link" href="../caesar">Caesar Cipher</a></td>
+						<td><a id="converter-link" href="../converter">Converter</a></td>
+						<td><a id="weather-link" href="../weather">Weather</a></td>
+					</tr>
+				</table>
+			</nav>
 		</header>
-		<h1 class="heading">Converter</h1>
-		<div class="box">
-			<table class="converter-table">
-				<tr>
-					<td>
-						<label for="quantity">Quantity:</label>
-						<select id="quantity">
-							<option value="select">Select</option>
-							<option value="length">Length</option>
-							<option value="information">Information</option>
-							<option value="temperature">Temperature</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td id="input-box">
-						<label for="input">Input:</label>
-						<input type="text" id="input">
-					</td>
-				</tr>
-			</table>
-			<br/>
-			<table class="converter-table">
-				<tr>
-					<td>
-						<label for="input-prefix">Input prefix:</label>
-						<select id="input-prefix">
-							<option value='none'>none (10⁰)</option>
-						</select>
-					</td>
-					<td>
-						<label for="input-unit">Input unit:</label>
-						<select id="input-unit">
-							<option value="select">Select</option>
-						</select>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<label for="output-prefix">Output prefix:</label>
-						<select id="output-prefix">
-							<option value='none'>none (10⁰)</option>
-						</select>
-					</td>
-					<td>
-						<label for="output-unit">Output unit:</label>
-						<select id="output-unit">
-							<option value="select">Select</option>
-						</select>
-					</td>
-				</tr>
-			</table>
-			<br/>
-			<table class="converter-table">
-				<tr>
-					<td>
-						<button type="submit" id="convert">Convert</button>
-						<button type="submit" id="reverse">Reverse units</button>
-						<button type="submit" id="clear">Clear</button>
-					</td>
-				</tr>
-				<tr>
-					<td id="output"></td>
-				</tr>
-			</table>
-		</div>
-		<p id="copyright">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		<main>
+			<div class="box">
+				<h2 class="heading">Converter</h2>
+				<form action="POST">
+					<table>
+						<tr>
+							<td>
+								<fieldset>
+									<legend>Quantity:</legend>
+									<p>
+										<input type="radio" name="quantity" id="info" value="info">
+										<label for="info">Information</label>
+									</p>
+									<p>
+										<input type="radio" name="quantity" id="length" value="length">
+										<label for="length">Length</label> 
+									</p>
+									<p>
+										<input type="radio" name="quantity" id="temp" value="temp">
+										<label for="temp">Temperature</label>
+									</p>
+								</fieldset>
+							</td>
+							<td>
+								<table class="converter-table">
+									<tr>
+										<td id="input-box">
+											<label for="input">Input:</label>
+											<input type="text" id="input">
+										</td>
+									</tr>
+								</table>
+								<br/>
+								<table class="converter-table">
+									<tr>
+										<td>
+											<label for="input-prefix">Input prefix:</label>
+											<select id="input-prefix">
+												<option value='none'>none (10⁰)</option>
+											</select>
+										</td>
+										<td>
+											<label for="input-unit">Input unit:</label>
+											<select id="input-unit">
+												<option value="select">Select</option>
+											</select>
+										</td>
+									</tr>
+									<tr>
+										<td>
+											<label for="output-prefix">Output prefix:</label>
+											<select id="output-prefix">
+												<option value='none'>none (10⁰)</option>
+											</select>
+										</td>
+										<td>
+											<label for="output-unit">Output unit:</label>
+											<select id="output-unit">
+												<option value="select">Select</option>
+											</select>
+										</td>
+									</tr>
+								</table>
+								<br/>
+								<table class="converter-table">
+									<tr>
+										<td>
+											<button type="submit" id="convert">Convert</button>
+											<button type="submit" id="reverse">Reverse units</button>
+											<button type="reset" id="clear">Clear</button>
+										</td>
+									</tr>
+									<tr>
+										<td id="output"></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</form>
+			</div>
+		</main>
+		<footer>
+			<a id="fb" href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
+			<a id="gh" href="https://github.com/soumyabrata2006">GitHub</a> •
+			<a id="li" href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308/">LinkedIn</a> •
+			<a id="ex" href="https://x.com/soumyabhatta_of">X</a>
+			<p>Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		</footer>
 		<script src="{% static 'script.js' %}"></script>
 		<script src="{% static 'converter/script.js' %}"></script>
 	</body>
