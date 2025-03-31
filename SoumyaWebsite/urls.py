@@ -22,5 +22,5 @@ urlpatterns = [
 	path('', include("main.urls")),
 	path('caesar/', include("caesar.urls")),
 	path('converter/', include("converter.urls")),
-	path('weather', include("weather.urls"))
+	path('weather', include("weather.urls")),
 ]
