@@ -10,7 +10,11 @@ My Caesar cipher project to encrypt and decrypt a given text with Caesar cipher.
 ## Converter
 My converter project to convert from one unit to another for a given quantity. Currently supports the following quantities:
 * Information
-* 
+* Length
+* Temperature
+
+## Weather
+My weather app. Currently provides only basic information.
 
 ## Steps to Use
 1. Download Python and Django.
