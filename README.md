@@ -1,5 +1,5 @@
 # SoumyaWebsite
-My personal website, containing all my web and Python projects. Uses HTML, CSS and JavaScript for frontend, and Django for backend.
+My personal website, containing several small-scale frontend web projects. Uses HTML, CSS and JavaScript.
 
 ## Main
 The homepage containing résumé-like information about me with contact details.
@@ -16,10 +16,5 @@ My converter project to convert from one unit to another for a given quantity. C
 ## Weather
 My weather app. Currently provides only basic information.
 
-## Steps to Use
-1. Download Python and Django.
-2. Download the repository as ZIP.
-3. Extract the repository.
-4. Run the terminal at the repository (Windows or Linux).
-5. Type "python manage.py migrate" and then "python manage.py runserver".
-6. Open http://localhost:8000/.
+## 2023 archive
+The two web projects that I wrote in 2023 for class XII computer application. They were originally solely written in HTML, now augmented with CSS.
