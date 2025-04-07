@@ -1,4 +1,4 @@
-# SoumyaWebsite
+# soumyabrata-website
 My personal website, containing several small-scale frontend web projects. Uses HTML, CSS and JavaScript.
 
 ## Main
