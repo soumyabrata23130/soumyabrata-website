@@ -4,102 +4,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
 		<title>Homepage - Soumya's Website</title>
 		<link rel="stylesheet" href="styles.css"/>
-		<style>
-			.qual-table,
-			.qual-table th,
-			.qual-table td {
-				border:1px solid black;
-				border-collapse:collapse;
-				padding: 0.5em;
-			}
-			#photo {
-				float: right;
-				width: 150px;
-			}
-			body.dark {
-				.qual-table,
-				.qual-table th,
-				.qual-table td {
-					border:1px solid white;
-				}
-			}
-		</style>
 	</head>
 	<body>
 		<header>
-			<h1 id="welcome-text">Soumya's Website</h1>
-			<label for="theme-select">Select theme:</label>
-			<select id="theme-select">
-				<option value="light">Light</option>
-				<option value="dark">Dark</option>
-			</select>
-			<nav class="tab">
-				<table>
-					<tr>
-						<td><a id="homepage-link" href="homepage.html">Homepage</a></td>
-						<td><a id="projects-link" href="projects/projects.html">Projects</a></td>
-					</tr>
-				</table>
+			<h1><a id="homepage-link" href="homepage.html">Soumyabrata's Website</a></h1>
+			<nav>
+				<a href="projects.html">Projects</a>
+				<a href="websites.html">Websites</a>
 			</nav>
 		</header>
 		<main>
-			<div class="box">
-				<img id="photo" src="Picture1.jpg" alt="Profile photo">
-				<h2 id="about">About me</h2>
-				<p>Born in the 2000s, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS, and JavaScript. I am currently learning React, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
-				<h2 id="qualifications">Academic qualifications</h2>
-				<table class="qual-table">
-					<tr>
-						<th id="degree">Degree</th>
-						<th id="institution">Institution</th>
-						<th id="parent-institution">Parent institution</th>
-						<th id="grade">Grade</th>
-					</tr>
-					<tr>
-						<td id="btech">Bachelor of Technology in<br>Computer Science and Engineering (pursuing 2nd year)</td>
-						<td id="aot">Academy of Technology</td>
-						<td id="makaut">Maulana Abul Kalam Azad University of Technology</td>
-						<td id="cgpa">CGPA: 7.984</td>
-					</tr>
-					<tr>
-						<td id="higher-secondary">Higher Secondary</td>
-						<td id="school">Burdwan Town School</td>
-						<td id="wbchse">West Bengal Council of Higher Secondary Education</td>
-						<td id="hs-percent">87.4%</td>
-					</tr>
-					<tr>
-						<td id="madhyamik">Madhyamik</td>
-						<td id="school">Burdwan Town School</td>
-						<td id="wbbse">West Bengal Board of Secondary Education</td>
-						<td id="mp-percent">88%</td>
-					</tr>
-				</table>
-				<h2 id="expertise">Areas of expertise</h2>
-				<ul>
-					<li id="frontend">Frontend development: HTML, CSS, JavaScript, React, Next.js</li>
-					<li id="backend">Backend development: Node.js, Django</li>
-					<li id="soft-dev">Software development: C, Python, Java</li>
-					<li id="graphics">Graphics: FreeCAD, Inkscape, GIMP</li>
-					<li id="os">Operating systems: Windows 11</li>
-				</ul>
-				<h2 id="personal-details">Personal details</h2>
-				<ul>
-					<li id="name">Name: Soumyabrata Bhattacharjee</li>
-					<li id="father">Father: Rajesh Bhattacharjee</li>
-					<li id="mother">Mother: Papiya Bhattacharya</li>
-					<li id="address">Address: Natunpally, Ward 8, P.O. Burdwan-713101</li>
-					<li id="district">District: Purba Bardhaman</li>
-					<li id="state">State: West Bengal, India</li>
-					<li id="date-of-birth">Birthday: 27 May</li>
-					<li id="lang-spoken">Languages: Bengali (first), English (second), Hindi</li>
-				</ul>
-				<h2 id="contact">Contact me</h2>
-				<ul>
-					<li><span id="personal-email">Personal email:</span> <a href="mailto:soumyabrata8974@gmail.com">soumyabrata8974@gmail.com</a></li>
-					<li><span id="academic-email">Academic email:</span> <a href="mailto:soumyabrata.bhattacharjee.23@aot.edu.in">soumyabrata.bhattacharjee.23@aot.edu.in</a></li>
-					<li><span id="phone">Phone number:</span> <a href="tel:+917908876512">+91 79088 76512</a></li>
-				</ul>
-			</div>
+			<img src="Picture1.jpg" alt="Profile photo">
+			<h2>About me</h2>
+			<p>Born in the 2000s, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS, and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
+			<table>
+				<tr>
+					<td rowspan="2" width="50%">
+						<h2>Academic qualifications</h2>
+						<ul>
+							<li><b>Bachelor of Technology in Computer Science and Engineering</b> at Academy of Technology, affiliated to Maulana Abul Kalam Azad 	University of Technology. CGPA: 7.984 (pursuing 4th semester).</li>
+							<li><b>Higher Secondary Examination</b> (2023) at Burdwan Town School. Board: West Bengal Council of Higher Secondary Education. Percentage: 87.4.</li>
+							<li><b>Madhyamik Pariksha (Secondary Examination)</b> (2021) at Burdwan Town School. Board: West Bengal Board of Secondary Education. Percentage: 88.</li>
+						</ul>
+					</td>
+					<td width="50%">
+						<h2>Areas of expertise</h2>
+						<ul>
+							<li><b>Frontend:</b> CSS, HTML, JavaScript, Next.js, React</li>
+							<li><b>Backend:</b> Node.js, Django</li>
+							<li><b>Software development:</b> C, Java, Python</li>
+							<li><b>Graphics:</b> Figma, FreeCAD, GIMP, Inkscape</li>
+							<li><b>Operating systems:</b> Windows 11, Ubuntu WSL</li>
+						</ul>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<h2>Personal details</h2>
+						<ul>
+							<li><b>Name:</b> Soumyabrata Bhattacharjee</li>
+							<li><b>Parents:</b> Rajesh Bhattacharjee (father) and Papiya Bhattacharya (mohter)</li>
+							<li><b>Address:</b> Natunpally, Ward 8, P.O. Burdwan-713101, Purba Bardhaman</li>
+							<li><b>State:</b> West Bengal, India</li>
+							<li><b>Birthday:</b> 27 May</li>
+							<li><b>Languages:</b> Bengali (first), English (second), Hindi</li>
+						</ul>
+					</td>
+				</tr>
+			</table>
 		</main>
 		<footer>
 			<a id="fb" href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •

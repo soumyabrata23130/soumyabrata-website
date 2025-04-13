@@ -1,20 +1,11 @@
 # soumyabrata-website
-My personal website, containing several small-scale frontend web projects. Uses HTML, CSS and JavaScript.
 
-## Main
-The homepage containing résumé-like information about me with contact details.
+This is my personal website built using Next.js. It contains a portfolio to introduce myself, a blog page, and links to other projects and websites.
 
-## Caesar
-My Caesar cipher project to encrypt and decrypt a given text with Caesar cipher.
+## Homepage (Portfolio)
 
-## Converter
-My converter project to convert from one unit to another for a given quantity. Currently supports the following quantities:
-* Information
-* Length
-* Temperature
+An overview of
 
-## Weather
-My weather app. Currently provides only basic information.
-
-## 2023 archive
-The two web projects that I wrote in 2023 for class XII computer application. They were originally solely written in HTML, now augmented with CSS.
+- My academic background
+- Technical expertise
+- Personal information
