@@ -2,64 +2,70 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-		<title>Homepage - Soumya's Website</title>
+		<title>Websites</title>
 		<link rel="stylesheet" href="styles.css"/>
 	</head>
 	<body>
-		<header>
-			<h1><a id="homepage-link" href="homepage.html">Soumyabrata's Website</a></h1>
-			<nav>
-				<a href="projects.html">Projects</a>
-				<a href="websites.html">Websites</a>
-			</nav>
-		</header>
 		<main>
 			<img src="Picture1.jpg" alt="Profile photo">
-			<h2>About me</h2>
-			<p>Born in the 2000s, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS, and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
+			<h2>Websites</h2>
+			<p>This is my collection of websites that I recommend for tech students and professionals alike.</p>
 			<table>
-				<tr>
-					<td rowspan="2" width="50%">
-						<h2>Academic qualifications</h2>
-						<ul>
-							<li><b>Bachelor of Technology in Computer Science and Engineering</b> at Academy of Technology, affiliated to Maulana Abul Kalam Azad 	University of Technology. CGPA: 7.984 (pursuing 4th semester).</li>
-							<li><b>Higher Secondary Examination</b> (2023) at Burdwan Town School. Board: West Bengal Council of Higher Secondary Education. Percentage: 87.4.</li>
-							<li><b>Madhyamik Pariksha (Secondary Examination)</b> (2021) at Burdwan Town School. Board: West Bengal Board of Secondary Education. Percentage: 88.</li>
-						</ul>
-					</td>
-					<td width="50%">
-						<h2>Areas of expertise</h2>
-						<ul>
-							<li><b>Frontend:</b> CSS, HTML, JavaScript, Next.js, React</li>
-							<li><b>Backend:</b> Node.js, Django</li>
-							<li><b>Software development:</b> C, Java, Python</li>
-							<li><b>Graphics:</b> Figma, FreeCAD, GIMP, Inkscape</li>
-							<li><b>Operating systems:</b> Windows 11, Ubuntu WSL</li>
-						</ul>
-					</td>
-				</tr>
-				<tr>
-					<td>
-						<h2>Personal details</h2>
-						<ul>
-							<li><b>Name:</b> Soumyabrata Bhattacharjee</li>
-							<li><b>Parents:</b> Rajesh Bhattacharjee (father) and Papiya Bhattacharya (mohter)</li>
-							<li><b>Address:</b> Natunpally, Ward 8, P.O. Burdwan-713101, Purba Bardhaman</li>
-							<li><b>State:</b> West Bengal, India</li>
-							<li><b>Birthday:</b> 27 May</li>
-							<li><b>Languages:</b> Bengali (first), English (second), Hindi</li>
-						</ul>
-					</td>
-				</tr>
+				<thead>
+					<tr>
+						<th>Academy of Technology</th>
+						<th>AOT Student Groups</th>
+						<th>MAKAUT Websites</th>
+						<th>Programming</th>
+						<th>Miscellaneous</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>
+							<ul>
+								<li><a href="https://aot.edu.in/">Official Website</a></li>
+								<li><a href="https://c3it2024.aot.edu.in/">C3IT 2024</a></li>
+								<li id="fiesta"></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://gdg.community.dev/gdg-on-campus-academy-of-technology-hooghly-india/">GDG On Campus</a></li>
+								<li><a href="https://sc-csbs.vercel.app/">Students' Chapter CSBS</a></li>
+								<li><a href="https://www.sccseaot.com/">Students' Chapter CSE</a></li>
+								<li><a href="https://www.sceceaot.com/">Students' Chapter ECE</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://makaut.wb.gov.in/">makaut.wb.gov.in (official)</a></li>
+								<li><a href="https://makautexam.net/">makautexam.net (official)</a></li>
+								<li><a href="https://www.makautwb.ac.in/">makautwb.ac.in (official)</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a></li>
+								<li><a href="https://goalkicker.com/">Goalkicker</a></li>
+								<li><a href="https://www.programiz.com/">Programiz</a></li>
+								<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+							</ul>
+						</td>
+						<td>
+							<ul>
+								<li><a href="https://lastminutesengineering.tech/">Last Minute Engineering</a></li>
+								<li><a href="https://www.pyqonline.com/">PYQ Online</a></li>
+								<li><a href="https://www.resourcio.in/">Resourcio Community</a></li>
+							</ul>
+						</td>
+					</tr>
+				</tbody>
 			</table>
 		</main>
-		<footer>
-			<a id="fb" href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
-			<a id="gh" href="https://github.com/soumyabrata2006">GitHub</a> •
-			<a id="li" href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308/">LinkedIn</a> •
-			<a id="ex" href="https://x.com/soumyabhatta_of">X</a>
-			<p>Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
-		</footer>
-		<script src="script.js"></script>
+		<script>
+			let date=new Date(), year=date.getUTCFullYear()%100
+			document.getElementById("fiesta").innerHTML=`<a href="https://www.aotfiesta${year}.tech/">Techfiesta 2k${year}</a>`
+		</script>
 	</body>
 </html>
