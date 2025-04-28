@@ -1,6 +1,6 @@
 # Soumyabrata's Website
 
-This is my personal website built using Next.js. It contains a portfolio to introduce myself, a blog page, and links to other projects and websites.
+My personal website built using HTML, CSS and JavaScript. It contains a portfolio to introduce myself and links to other projects and websites.
 
 ## Homepage (Portfolio)
 
