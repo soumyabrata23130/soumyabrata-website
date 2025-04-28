@@ -33,7 +33,6 @@ header {
 	align-items: center;
 	background: var(--box);
 	box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.2);
-	display: flex;
 	justify-content: space-between;
 	margin: 0;
 	padding: 0 2rem;
