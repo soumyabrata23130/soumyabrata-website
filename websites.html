@@ -2,66 +2,82 @@
 <html lang="en">
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-		<title>Websites</title>
+		<title>Websites - Soumyabrata's Website</title>
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="styles.css"/>
 	</head>
 	<body>
+		<header class="flex justify-between items-center">
+			<h1 class="font-bold text-2xl">Soumyabrata's Website</h1>
+			<nav class="flex justify-center items-center">
+				<a class="cursor-pointer p-5" href="index.html">Homepage</a>
+				<a class="cursor-pointer font-bold p-5" href="websites.html">Websites</a>
+			</nav>
+		</header>
 		<main>
-			<h2>Websites</h2>
+			<h2 class="font-bold text-2xl text-center">Websites</h2>
 			<p>This is my collection of websites that I recommend for tech students and professionals alike.</p>
-			<table>
-				<thead>
-					<tr>
-						<th>Academy of Technology</th>
-						<th>AOT Student Groups</th>
-						<th>MAKAUT Websites</th>
-						<th>Programming</th>
-						<th>Miscellaneous</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>
-							<ul>
-								<li><a href="https://aot.edu.in/">Official Website</a></li>
-								<li><a href="https://c3it2024.aot.edu.in/">C3IT 2024</a></li>
-								<li id="fiesta"></li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li><a href="https://gdg.community.dev/gdg-on-campus-academy-of-technology-hooghly-india/">GDG On Campus</a></li>
-								<li><a href="https://sc-csbs.vercel.app/">Students' Chapter CSBS</a></li>
-								<li><a href="https://www.sccseaot.com/">Students' Chapter CSE</a></li>
-								<li><a href="https://www.sceceaot.com/">Students' Chapter ECE</a></li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li><a href="https://makaut.wb.gov.in/">makaut.wb.gov.in (official)</a></li>
-								<li><a href="https://makautexam.net/">makautexam.net (official)</a></li>
-								<li><a href="https://www.makautwb.ac.in/">makautwb.ac.in (official)</a></li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li><a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a></li>
-								<li><a href="https://goalkicker.com/">Goalkicker</a></li>
-								<li><a href="https://www.programiz.com/">Programiz</a></li>
-								<li><a href="https://www.w3schools.com/">W3Schools</a></li>
-							</ul>
-						</td>
-						<td>
-							<ul>
-								<li><a href="https://lastminutesengineering.tech/">Last Minute Engineering</a></li>
-								<li><a href="https://www.pyqonline.com/">PYQ Online</a></li>
-								<li><a href="https://www.resourcio.in/">Resourcio Community</a></li>
-							</ul>
-						</td>
-					</tr>
-				</tbody>
-			</table>
+			<!-- flexbox -->
+			<div class="flex flex-wrap justify-around">
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">Academy of Technology</h2>
+					<ul class="list-disc ml-6">
+						<li><a href="https://aot.edu.in/">Official Website</a></li>
+						<li><a href="https://c3it2024.aot.edu.in/">C3IT 2024</a></li>
+						<li id="fiesta"></li>
+					</ul>
+				</div>
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">AOT Student Groups</h2>
+					<ul class="website-list list-disc ml-6">
+						<li><a href="https://gdg.community.dev/gdg-on-campus-academy-of-technology-hooghly-india/">GDG On Campus</a></li>
+						<li><a href="https://sc-csbs.vercel.app/">Students' Chapter CSBS</a></li>
+						<li><a href="https://www.sccseaot.com/">Students' Chapter CSE</a></li>
+						<li><a href="https://www.sceceaot.com/">Students' Chapter ECE</a></li>
+					</ul>
+				</div>
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">MAKAUT Official Websites</h2>
+					<ul class="website-list list-disc ml-6">
+						<li><a href="https://makaut.wb.gov.in/">makaut.wb.gov.in</a></li>
+						<li><a href="https://makautexam.net/">makautexam.net</a></li>
+						<li><a href="https://www.makautwb.ac.in/">makautwb.ac.in</a></li>
+					</ul>
+				</div>
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">Programming</h2>
+					<ul class="website-list list-disc ml-6">
+						<li><a href="https://www.geeksforgeeks.org/">GeeksForGeeks</a></li>
+						<li><a href="https://goalkicker.com/">Goalkicker</a></li>
+						<li><a href="https://www.programiz.com/">Programiz</a></li>
+						<li><a href="https://www.w3schools.com/">W3Schools</a></li>
+					</ul>
+				</div>
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">Other Resources</h2>
+					<ul class="website-list list-disc ml-6">
+						<li><a href="https://lastminutesengineering.tech/">Last Minute Engineering</a></li>
+						<li><a href="https://www.pyqonline.com/">PYQ Online</a></li>
+						<li><a href="https://www.resourcio.in/">Resourcio Community</a></li>
+					</ul>
+				</div>
+			</div>
 		</main>
+		<footer class="m-auto p-5 text-center">
+			<div class="flex gap-4 justify-center items-center m-2 p-1">
+				<b class="text-bold">Contact:</b>
+				<nav class="website-list flex gap-4">
+					<a href="mailto:soumyabrata8974@gmail.com">Email</a>
+					<a href="tel:+917908876512">Phone</a>
+					<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a>
+					<a href="https://github.com/soumyabrata23130">GitHub</a>
+					<a href="https://www.instagram.com/soumyabrata23130">Instagram</a>
+					<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a>
+					<a href="https://x.com/soumyabrata2705">X</a>
+				</nav>
+			</div>
+			<p class="text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		</footer>
 		<script>
 			let date=new Date(), year=date.getUTCFullYear()%100
 			document.getElementById("fiesta").innerHTML=`<a href="https://www.aotfiesta${year}.tech/">Techfiesta 2k${year}</a>`
