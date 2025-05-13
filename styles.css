@@ -55,6 +55,10 @@ header nav a:hover {
 	background: var(--background);
 }
 
+.current-link {
+	background: var(--background);
+}
+
 td {
 	vertical-align: top;
 }
