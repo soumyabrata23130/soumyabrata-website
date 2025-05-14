@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Blogs - Soumyabrata's Website</title>
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<header class="flex justify-between items-center">
+			<h1 class="font-bold text-2xl">Soumyabrata's Website</h1>
+			<nav class="flex justify-center items-center">
+				<a class="cursor-pointer p-5" href="index.html">Homepage</a>
+				<a class="current-link cursor-pointer p-5" href="blogs.html">Blogs</a>
+				<a class="cursor-pointer p-5" href="websites.html">Websites</a>
+			</nav>
+		</header>
+		<main>
+			<h2 class="font-bold text-2xl text-center">Blogs</h2>
+			<p>This is my collection of websites that I recommend for tech students and professionals alike.</p>
+			<!-- flexbox -->
+			<div class="flex flex-wrap justify-around">
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">2025</h2>
+					<ul class="list-disc ml-6">
+						<li><a href="blogs/2025-05-14.html">From Borders to Bridges</a></li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="m-auto p-2 text-center">
+			<div class="flex gap-4 justify-center items-center m-1 p-1">
+				<b class="text-bold">Contact:</b>
+				<nav class="website-list flex gap-4">
+					<a href="mailto:soumyabrata8974@gmail.com">Email</a>
+					<a href="tel:+917908876512">Phone</a>
+					<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a>
+					<a href="https://github.com/soumyabrata23130">GitHub</a>
+					<a href="https://www.instagram.com/soumyabrata23130">Instagram</a>
+					<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a>
+					<a href="https://x.com/soumyabrata2705">X</a>
+				</nav>
+			</div>
+			<p class="text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		</footer>
+		<script>
+			let date=new Date(), year=date.getUTCFullYear()%100
+			document.getElementById("fiesta").innerHTML=`<a href="https://www.aotfiesta${year}.tech/">Techfiesta 2k${year}</a>`
+		</script>
+	</body>
+</html>

@@ -1,6 +1,7 @@
 :root {
 	--background: #f0f0f2;
 	--box: white;
+	--back: lightgreen;
 	--foreground: #171717;
 }
 
@@ -8,6 +9,7 @@
 	:root {
 		--background: #0a0a0a;
 		--box: #202020;
+		--back: darkgreen;
 		--foreground: #ededed;
 	}
 }
@@ -57,6 +59,10 @@ header nav a:hover {
 
 .current-link {
 	background: var(--background);
+}
+
+.back-button {
+	background: var(--back);
 }
 
 td {
