@@ -1,8 +1,14 @@
 :root {
-	--background: #f0f0f2;
-	--box: white;
-	--back: lightgreen;
-	--foreground: black;
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--background: #f0f0f2;
+		--box: white;
+		--back: lightgreen;
+		--foreground: black;
+	}
 }
 
 @media (prefers-color-scheme: dark) {
@@ -65,8 +71,8 @@ header nav a:hover {
 	background: var(--back);
 }
 
-td {
-	vertical-align: top;
+img, select {
+	border-color: var(--foreground);
 }
 
 @media (prefers-color-scheme: dark) {
