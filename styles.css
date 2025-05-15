@@ -2,7 +2,7 @@
 	--background: #f0f0f2;
 	--box: white;
 	--back: lightgreen;
-	--foreground: #171717;
+	--foreground: black;
 }
 
 @media (prefers-color-scheme: dark) {
