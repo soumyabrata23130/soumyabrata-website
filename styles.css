@@ -43,11 +43,12 @@ header {
 	z-index: 1000;
 }
 
-.navbar nav a:hover {
-	background: var(--background);
+.navbar a {
+	cursor: pointer;
+	padding: 0.5rem 2rem;
 }
 
-.current-link {
+.navbar a:hover {
 	background: var(--background);
 }
 
@@ -60,7 +61,7 @@ main {
 .card {
 	background: var(--box);
 	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-	min-width: 30%;
+	min-width: 32%;
 }
 
 footer {
@@ -82,7 +83,7 @@ img, select {
 }
 
 img {
-	max-width: 180px;
+	max-width: 160px;
 }
 
 @media (prefers-color-scheme: dark) {
