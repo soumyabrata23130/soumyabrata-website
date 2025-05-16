@@ -13,13 +13,25 @@
 		</style>
 	</head>
 	<body>
-		<header class="flex justify-between items-center">
-			<h1 class="font-bold text-2xl">Soumyabrata's Website</h1>
-			<nav class="flex justify-center items-center">
-				<a class="cursor-pointer p-5" href="../index.html">Homepage</a>
-				<a class="cursor-pointer p-5" href="../blogs.html">Blogs</a>
-				<a class="cursor-pointer p-5" href="../websites.html">Websites</a>
-			</nav>
+		<header>
+			<div class="flex justify-between items-center">
+				<h1 class="font-bold py-2 text-2xl">Soumyabrata's Website</h1>
+				<label>Select theme:
+					<select class="border" id="theme-select">
+						<option value="default">System default</option>
+						<option value="dark">Dark</option>
+						<option value="light">Light</option>
+					</select>
+				</label>
+			</div>
+			<hr>
+			<div class="navbar flex justify-center">
+				<nav class="flex items-center">
+					<a class="cursor-pointer p-3" href="index.html">Homepage</a>
+					<a class="cursor-pointer p-3" href="blogs.html">Blogs</a>
+					<a class="cursor-pointer p-3" href="websites.html">Websites</a>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<div class="m-2 text-center">
@@ -80,9 +92,6 @@
 			</div>
 			<p class="text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
 		</footer>
-		<script>
-			let date=new Date(), year=date.getUTCFullYear()%100
-			document.getElementById("fiesta").innerHTML=`<a href="https://www.aotfiesta${year}.tech/">Techfiesta 2k${year}</a>`
-		</script>
+		<script src="../theme-select.js"></script>
 	</body>
 </html>

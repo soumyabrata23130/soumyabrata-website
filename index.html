@@ -7,49 +7,62 @@
 		<link rel="stylesheet" href="styles.css">
 	</head>
 	<body>
-		<header class="flex justify-between items-center">
-			<h1 class="font-bold text-2xl">Soumyabrata's Website</h1>
-			<nav class="flex justify-center items-center">
-				<a class="current-link cursor-pointer p-5" href="index.html">Homepage</a>
-				<a class="cursor-pointer p-5" href="blogs.html">Blogs</a>
-				<a class="cursor-pointer p-5" href="websites.html">Websites</a>
-			</nav>
-			<label>Select theme:
-				<select class="border" id="theme-select">
-					<option value="default">System default</option>
-					<option value="dark">Dark</option>
-					<option value="light">Light</option>
-				</select>
-			</legend>
+		<header>
+			<div class="flex justify-between items-center">
+				<h1 class="font-bold py-2 text-2xl">Soumyabrata's Website</h1>
+				<label>Select theme:
+					<select class="border" id="theme-select">
+						<option value="default">System default</option>
+						<option value="dark">Dark</option>
+						<option value="light">Light</option>
+					</select>
+				</label>
+			</div>
+			<hr>
+			<div class="navbar flex justify-center">
+				<nav class="flex items-center">
+					<a class="current-link cursor-pointer p-3" href="index.html">Homepage</a>
+					<a class="cursor-pointer p-3" href="blogs.html">Blogs</a>
+					<a class="cursor-pointer p-3" href="websites.html">Websites</a>
+				</nav>
+			</div>
 		</header>
 		<main>
 			<h2 class="font-bold text-2xl text-center">Homepage</h2>
-			<div class="p-2">
-				<img class="border-2 float-right m-2 rounded-full" src="photo_2025.jpg" alt="Me in 2025" width="160">
-				<h3 class="font-bold text-xl">About me</h2>
-				<p>Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
+			<!-- top flexbox -->
+			<div class="flex gap-2 justify-around my-3">
+				<div class="card p-3 rounded-lg">
+					<h3 class="font-bold text-xl">About me</h3>
+					<p>Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
+				</div>
+				<div>
+					<img class="border-2 mx-2 rounded-full" src="photo_2025.jpg" alt="Me in 2025">
+				</div>
 			</div>
-			<!-- flexbox -->
-			<div class="flex flex-wrap gap-2">
-				<div class="p-2">
-					<h3 class="font-bold text-xl">Academic qualifications</h2>
-					<ul class="list-disc ml-6">
-						<li>Bachelor of Technology in Computer Science and Engineering (2024-2027)
-							<ul class="list-disc ml-6">
+			<!-- main flexbox -->
+			<div class="flex flex-wrap justify-around my-3">
+				<div class="card p-3 rounded-lg">
+					<h3 class="font-bold my-1 text-xl">Academic qualifications</h2>
+					<ul class="list-disc ml-5">
+						<li>Bachelor of Technology in Computer Science and Engineering
+							<ul class="list-disc ml-5">
+								<li><b class="font-bold">Year:</b> 2024-2027</li>
 								<li><b class="font-bold">College:</b> Academy of Technology, Hooghly</li>
 								<li><b class="font-bold">University:</b> Maulana Abul Kalam Azad University of Technology</li>
 								<li><b class="font-bold">CGPA:</b> 7.984 (pursuing 4th semester)</li>
 							</ul>
 						</li>
-						<li>Higher Secondary Examination (2023)
-							<ul class="list-disc ml-6">
+						<li>Higher Secondary Examination
+							<ul class="list-disc ml-5">
+								<li><b class="font-bold">Year:</b> 2023</li>
 								<li><b class="font-bold">School:</b> Burdwan Town School</li>
 								<li><b class="font-bold">Board:</b> West Bengal Council of Higher Secondary Education</li>
 								<li><b class="font-bold">Percentage:</b> 87.4</li>
 							</ul>
 						</li>
-						<li>Madhyamik Pariksha (Secondary Examination) (2021)
-							<ul class="list-disc ml-6">
+						<li>Madhyamik Pariksha (Secondary Examination)
+							<ul class="list-disc ml-5">
+								<li><b class="font-bold">Year:</b> 2021</li>
 								<li><b class="font-bold">School:</b> Burdwan Town School</li>
 								<li><b class="font-bold">Board:</b> West Bengal Board of Secondary Education</li>
 								<li><b class="font-bold">Percentage:</b> 88</li>
@@ -57,32 +70,45 @@
 						</li>
 					</ul>
 				</div>
-				<div class="p-2">
-					<h3 class="font-bold text-xl">Areas of expertise</h2>
-					<ul class="list-disc ml-6">
-						<li><b class="font-bold">Frontend:</b> CSS, HTML, JavaScript, Next.js, React</li>
+				<div class="card p-3 rounded-lg">
+					<h3 class="font-bold my-1 text-xl">Areas of expertise</h2>
+					<ul class="list-disc ml-5">
+						<li><b class="font-bold">Frontend:</b> CSS, HTML, JavaScript, React</li>
 						<li><b class="font-bold">Backend:</b> Node.js, Django</li>
-						<li><b class="font-bold">Software development:</b> C, Java, Python</li>
-						<li><b class="font-bold">Graphics:</b> Figma, FreeCAD, GIMP, Inkscape</li>
-						<li><b class="font-bold">Operating systems:</b> Windows 11, Ubuntu WSL</li>
+						<li><b class="font-bold">Programming:</b> C, Java, Python</li>
+						<li><b class="font-bold">Design:</b> Figma, FreeCAD, Inkscape</li>
+						<li><b class="font-bold">Operating Systems:</b> Windows 11, WSL</li>
 					</ul>
-				</div>
-				<div class="p-2">
-					<h3 class="font-bold text-xl">Projects</h2>
-					<ul class="list-disc ml-6">
+					<h3 class="font-bold my-1 text-xl">Projects</h2>
+					<ul class="list-disc ml-5">
 						<li>Caesar Cipher</li>
 						<li>Converter</li>
 						<li>Number Type Checker</li>
 						<li>Weather</li>
 					</ul>
+					<h3 class="font-bold my-1 text-xl">Memberships</h2>
+					<ul class="list-disc ml-5">
+						<li>IEI Students' Chapter CSE (2024-present)</li>
+					</ul>
 				</div>
-				<div class="p-2">
-					<h3 class="font-bold text-xl">Personal details</h3>
-					<ul class="list-disc ml-6">
-						<li><b class="font-bold">Parents:</b> Rajesh Bhattacharjee (father) and Papiya Bhattacharya (mother)</li>
-						<li><b class="font-bold">Address:</b> Natunpally, Ward 8, P.O. Burdwan-713101, Purba Bardhaman</li>
+				<div class="card p-3 rounded-lg">
+					<h3 class="font-bold my-1 text-xl">Events</h2>
+					<ul class="list-disc ml-5">
+						<li>TechFiesta 2025</li>
+						<li>Gnosis Week 2025</li>
+						<li>Apertre 2025 (pull requests: 0)</li>
+						<li>AECon 2024</li>
+						<li>Symposium 2.0 (2024)</li>
+						<li>TechFiesta 2024</li>
+						<li>Techquisitive 5.0 (2024)</li>
+					</ul>
+					<h3 class="font-bold my-1 text-xl">Personal details</h3>
+					<ul class="list-disc ml-5">
+						<li><b class="font-bold">Father:</b> Rajesh Bhattacharjee</li>
+						<li><b class="font-bold">Mother:</b> Papiya Bhattacharya</li>
+						<li><b class="font-bold">Address:</b> Natunpally, Ward 8, P.O. Burdwan-713101</li>
 						<li><b class="font-bold">State:</b> West Bengal, India</li>
-						<li><b class="font-bold">Date of birth:</b> 27 May 2004</li>
+						<li><b class="font-bold">Date of birth:</b> 27 May 2004 (as per Aadhaar)</li>
 						<li><b class="font-bold">Languages:</b> Bengali (first), English (second), Hindi</li>
 					</ul>
 				</div>

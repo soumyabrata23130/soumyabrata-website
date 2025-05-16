@@ -43,10 +43,24 @@ header {
 	z-index: 1000;
 }
 
+.navbar nav a:hover {
+	background: var(--background);
+}
+
+.current-link {
+	background: var(--background);
+}
+
 main {
 	background: var(--background);
 	flex: 1;
 	padding: 1rem;
+}
+
+.card {
+	background: var(--box);
+	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
+	min-width: 30%;
 }
 
 footer {
@@ -59,14 +73,6 @@ footer {
 	text-decoration: underline;
 }
 
-header nav a:hover {
-	background: var(--background);
-}
-
-.current-link {
-	background: var(--background);
-}
-
 .back-button {
 	background: var(--back);
 }
@@ -75,8 +81,18 @@ img, select {
 	border-color: var(--foreground);
 }
 
+img {
+	max-width: 180px;
+}
+
 @media (prefers-color-scheme: dark) {
 	html {
 		color-scheme: dark;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	header nav {
+		visibility: hidden;
 	}
 }
