@@ -58,10 +58,9 @@ main {
 	padding: 1rem;
 }
 
-.card {
+section {
 	background: var(--box);
 	box-shadow: 3px 3px 7px rgba(0, 0, 0, 0.2);
-	min-width: 32%;
 }
 
 footer {
@@ -86,14 +85,20 @@ img {
 	max-width: 160px;
 }
 
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
+@media (orientation: portrait) {
+	.navbar a {
+		padding: 0.5rem 1rem;
+	}
+	.super-section {
+		flex-direction: column;
+	}
+	section h3 {
+		text-align: center;
 	}
 }
 
-@media screen and (max-width: 500px) {
-	header nav {
-		visibility: hidden;
+@media (prefers-color-scheme: dark) {
+	html {
+		color-scheme: dark;
 	}
 }

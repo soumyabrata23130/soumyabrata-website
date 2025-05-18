@@ -8,9 +8,9 @@
 	</head>
 	<body>
 		<header>
-			<div class="flex justify-between items-center">
-				<h1 class="font-bold py-2 text-2xl">Soumyabrata's Website</h1>
-				<label>Select theme:
+			<div class="flex justify-between items-center text-center">
+				<h1 class="flex-1 font-bold py-2 text-2xl">Soumyabrata's Website</h1>
+				<label class="flex-1">Select theme:
 					<select class="border" id="theme-select">
 						<option value="default">System default</option>
 						<option value="dark">Dark</option>
@@ -29,18 +29,16 @@
 		<main>
 			<h2 class="font-bold text-2xl text-center">Home</h2>
 			<!-- top flexbox -->
-			<div class="flex gap-2 justify-around my-3">
-				<div class="card p-3 rounded-lg">
+			<div class="super-section flex gap-3 justify-between my-3">
+				<img class="border-2 mx-2 rounded-full self-center" src="photo_2025.jpg" alt="Me in 2025">
+				<section class="p-3 rounded-lg">
 					<h3 class="font-bold text-xl">About me</h3>
 					<p>Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
-				</div>
-				<div>
-					<img class="border-2 mx-2 rounded-full" src="photo_2025.jpg" alt="Me in 2025">
-				</div>
+				</section>
 			</div>
 			<!-- main flexbox -->
-			<div class="flex flex-wrap justify-between my-3">
-				<div class="card p-3 rounded-lg">
+			<div class="super-section flex gap-2 justify-between my-3">
+				<section class="flex-1 p-3 rounded-lg">
 					<h3 class="font-bold my-1 text-xl">Academic qualifications</h2>
 					<ul class="list-disc ml-5">
 						<li>Bachelor of Technology in Computer Science and Engineering
@@ -68,8 +66,8 @@
 							</ul>
 						</li>
 					</ul>
-				</div>
-				<div class="card p-3 rounded-lg">
+				</section>
+				<section class="flex-1 p-3 rounded-lg">
 					<h3 class="font-bold my-1 text-xl">Areas of expertise</h2>
 					<ul class="list-disc ml-5">
 						<li><b class="font-bold">Frontend:</b> CSS, HTML, JavaScript, React</li>
@@ -89,8 +87,8 @@
 					<ul class="list-disc ml-5">
 						<li>IEI Students' Chapter CSE (2024-present)</li>
 					</ul>
-				</div>
-				<div class="card p-3 rounded-lg">
+				</section>
+				<section class="flex-1 p-3 rounded-lg">
 					<h3 class="font-bold my-1 text-xl">Events</h2>
 					<ul class="list-disc ml-5">
 						<li>TechFiesta 2025</li>
@@ -110,23 +108,20 @@
 						<li><b class="font-bold">Date of birth:</b> 27 May 2004 (as per Aadhaar)</li>
 						<li><b class="font-bold">Languages:</b> Bengali (first), English (second), Hindi</li>
 					</ul>
-				</div>
+				</section>
 			</div>
 		</main>
-		<footer class="m-auto p-2 text-center">
-			<div class="flex gap-4 justify-center items-center m-1 p-1">
-				<b class="text-bold">Contact:</b>
-				<nav class="website-list flex gap-4">
-					<a href="mailto:soumyabrata8974@gmail.com">Email</a>
-					<a href="tel:+917908876512">Phone</a>
-					<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a>
-					<a href="https://github.com/soumyabrata23130">GitHub</a>
-					<a href="https://www.instagram.com/soumyabrata23130">Instagram</a>
-					<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a>
-					<a href="https://x.com/soumyabrata2705">X</a>
-				</nav>
-			</div>
-			<p class="text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		<footer class="py-3 text-center">
+			<nav class="website-list flex flex-wrap gap-2 justify-center items-center mx-8 my-auto">
+				<a href="mailto:soumyabrata8974@gmail.com">Email</a> •
+				<a href="tel:+917908876512">Phone</a> •
+				<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
+				<a href="https://github.com/soumyabrata23130">GitHub</a> •
+				<a href="https://www.instagram.com/soumyabrata23130">Instagram</a> •
+				<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a> •
+				<a href="https://x.com/soumyabrata2705">X</a>
+			</nav>
+			<p class="m-2 text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
 		</footer>
 		<script src="theme-select.js"></script>
 	</body>
