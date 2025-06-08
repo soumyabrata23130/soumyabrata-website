@@ -22,6 +22,10 @@ An overview on my academic experience. Gaming experience is treated separately.
 
 An overview on my gaming accessories and some of the games I play.
 
-## Languages
+## Language Use
 
 An overview of the human languages I have learnt.
+
+## Websites
+
+Links to some relevant websites.
