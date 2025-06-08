@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+		<title>Gaming - Soumyabrata's Website</title>
+		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="styles.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="flex justify-between items-center text-center">
+				<h1 class="flex-1 font-bold py-2 text-2xl">Soumyabrata's Website</h1>
+				<label class="flex-1">Select theme:
+					<select class="border" id="theme-select">
+						<option value="default">System default</option>
+						<option value="dark">Dark</option>
+						<option value="light">Light</option>
+					</select>
+				</label>
+			</div>
+			<hr>
+			<nav class="navbar flex justify-around items-center">
+				<a href="index.html">Home</a>
+				<a href="blogs.html">Blogs</a>
+				<a href="experience.html">Experience</a>
+				<a href="gaming.html">Gaming</a>
+				<a href="languse.html">Language Use</a>
+				<a href="websites.html">Websites</a>
+			</nav>
+		</header>
+		<main>
+			<h2 class="font-bold text-2xl text-center">Gaming</h2>
+			<!-- flexbox -->
+			<div class="flex flex-wrap justify-around">
+				<div class="m-2 p-1">
+					<h3 class="font-bold text-xl">Accessories</h2>
+					<ul class="website-list list-disc ml-6">
+						<li><b class="font-bold">Laptop model:</b> Victus by HP Gaming Laptop</li>
+            <li><b class="font-bold">Processor:</b> 13th Gen Intel(R) Core(TM) i5-13420H, 2.10 GHz</li>
+            <li><b class="font-bold">RAM:</b> 16 GB</li>
+					</ul>
+          <h3 class="font-bold text-xl">Kerbal Space Program (KSP)</h2>
+					<ul class="website-list list-disc ml-6">
+            <li><b class="font-bold">Version:</b> 1.12.5</li>
+            <li><b class="font-bold">Experience:</b> Basic (launch, orbit, landing, moon transfer, atmospheric flight)</li>
+            <li><b class="font-bold">Playing since:</b> June 2025</li>
+					</ul>
+				</div>
+        <h3 class="font-bold text-xl">Orbiter Space Flight Simulator</h2>
+					<ul class="website-list list-disc ml-6">
+            <li><b class="font-bold">Version:</b> 2024</li>
+            <li><b class="font-bold">Experience:</b> Intermediate</li>
+            <li><b class="font-bold">Playing since:</b> August 2018</li>
+					</ul>
+				</div>
+			</div>
+		</main>
+		<footer class="py-3 text-center">
+			<nav class="website-list flex flex-wrap gap-2 justify-center items-center mx-8 my-auto">
+				<a href="mailto:soumyabrata8974@gmail.com">Email</a> •
+				<a href="tel:+917908876512">Phone</a> •
+				<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
+				<a href="https://github.com/soumyabrata23130">GitHub</a> •
+				<a href="https://www.instagram.com/soumyabrata23130">Instagram</a> •
+				<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a> •
+				<a href="https://x.com/soumyabrata2705">X</a>
+			</nav>
+			<p class="m-2 text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+		</footer>
+		<script src="theme-select.js"></script>
+	</body>
+</html>
