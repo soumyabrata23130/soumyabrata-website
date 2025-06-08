@@ -14,3 +14,14 @@ An overview of
 
 Some of my personal blogs.
 
+## Experience
+
+An overview on my academic experience. Gaming experience is treated separately.
+
+## Gaming
+
+An overview on my gaming accessories and some of the games I play.
+
+## Languages
+
+An overview of the human languages I have learnt.
