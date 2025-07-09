@@ -1,196 +1,332 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
-		<title>Homepage - Soumyabrata's Website</title>
-		<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-		<link rel="stylesheet" href="styles.css">
-	</head>
-	<body>
-		<header>
-			<div class="flex justify-between items-center text-center">
-				<h1 class="flex-1 font-bold py-2 text-2xl">Soumyabrata's Website</h1>
-				<label class="flex-1">Select theme:
-					<select class="border" id="theme-select">
-						<option value="default">System default</option>
-						<option value="dark">Dark</option>
-						<option value="light">Light</option>
-					</select>
-				</label>
+
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+	<title>Homepage - Soumyabrata's Website</title>
+	<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<header>
+		<div class="flex justify-around items-center text-center">
+			<h1 class="flex-1 font-bold py-2 text-2xl">Soumyabrata's Website</h1>
+			<label class="flex-1">Select theme:
+				<select class="border p-1" id="theme-select">
+					<option value="default">System default</option>
+					<option value="dark">Dark</option>
+					<option value="light">Light</option>
+				</select>
+			</label>
+		</div>
+		<hr>
+		<nav class="navbar flex justify-around items-center">
+			<a href="index.html">Home</a>
+			<a href="blogs.html">Blogs</a>
+			<a href="languse.html">Language Use</a>
+			<a href="websites.html">Websites</a>
+		</nav>
+	</header>
+	<main>
+		<section id="hero" class="my-8">
+			<div class="section-flex flex justify-around">
+				<img class="border-2 mx-2 rounded-full self-center" src="photo_2025.jpg" alt="Me in 2025" width="300"
+					height="300">
+				<div>
+					<h2 class="font-bold text-4xl text-center">Soumyabrata Bhattacharjee</h2>
+					<p class="text-xl text-center">Web Developer, UI/UX Designer and Gamer</p>
+					<div class="flex justify-around my-1">
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://1drv.ms/b/c/c90f54a69696f32d/Efx9vvkjYHtAkBefXaH9i6EBNwhcVGoNAJ0K3ujqc7qriw?e=dCrbby">Résumé</a>
+						</div>
+					</div>
+				</div>
 			</div>
-			<hr>
-			<nav class="navbar flex justify-around items-center">
-				<a href="index.html">Home</a>
-				<a href="blogs.html">Blogs</a>
-				<a href="experience.html">Experience</a>
-				<a href="gaming.html">Gaming</a>
-				<a href="languse.html">Language Use</a>
-				<a href="websites.html">Websites</a>
-			</nav>
-		</header>
-		<main>
-			<h2 class="font-bold text-2xl text-center">Home</h2>
-			<div class="super-section flex gap-3 justify-between my-3">
-				<img class="border-2 mx-2 rounded-full self-center" src="photo_2025.jpg" alt="Me in 2025">
-				<section class="flex-1 p-4 rounded-lg">
-					<h3 class="font-bold text-xl">About me</h3>
-					<p class="text-justify">Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science and engineering student and a tech enthusiast. Web development is my area of expertise. I have mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS and JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned professional in web development.</p>
-				</section>
+			<h3 class="font-bold my-4 text-2xl text-center">About me</h3>
+			<div class="card flex-1 px-4 py-2 rounded-xl">
+				<p class="my-1 text-justify">Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science
+					and engineering student and a tech enthusiast. Web development is my area of expertise. I have
+					mastered C, Java, and Python programming languages, along with frontend development in HTML, CSS and
+					JavaScript. I am currently learning React, Next.js, Node.js and Django. My goal is to complete my
+					study in B. Tech and secure a challenging job where I can provide my expertise and become a seasoned
+					professional in web development.</p>
 			</div>
-			<h3 class="font-bold text-xl text-center">Academic qualifications</h3>
-			<div class="super-section flex gap-2 justify-between my-3">
-				<section class="flex-1 p-4 rounded-lg">
-					<h3 class="font-bold text-lg">Bachelor of Technology</h3>
+		</section>
+		<section id="skills" class="my-8">
+			<h3 class="font-bold my-4 text-2xl text-center">Technical Skills</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Languages</h4>
+					<hr>
 					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">Stream:</b> Computer Science and Engineering</li>
-						<li><b class="font-bold">Year:</b> 2024-2027</li>
-						<li><b class="font-bold">College:</b> Academy of Technology, Hooghly</li>
-						<li><b class="font-bold">University:</b> Maulana Abul Kalam Azad University of Technology</li>
-						<li><b class="font-bold">CGPA:</b> 7.984 (pursuing 4th semester)</li>
+						<li><b class="font-bold">Software:</b> C, Java, Python</li>
+						<li><b class="font-bold">Web:</b> CSS, HTML, JavaScript</li>
 					</ul>
-				</section>
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Higher Secondary Examination</h4>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Frameworks and Libraries</h4>
+					<hr>
 					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">Year:</b> 2023</li>
-						<li><b class="font-bold">School:</b> Burdwan Town School</li>
-						<li><b class="font-bold">Board:</b> West Bengal Council of Higher Secondary Education</li>
-						<li><b class="font-bold">Percentage:</b> 87.4</li>
+						<li><b class="font-bold">CSS:</b> Tailwind</li>
+						<li><b class="font-bold">JavaScript:</b> React, Vite</li>
+						<li><b class="font-bold">Python:</b> Flask, Matplotlib, NumPy</li>
 					</ul>
-				</section>
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Madhyamik Pariksha (Secondary Examination)</h4>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Other Tools</h4>
+					<hr>
 					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">Year:</b> 2021</li>
-						<li><b class="font-bold">School:</b> Burdwan Town School</li>
-						<li><b class="font-bold">Board:</b> West Bengal Board of Secondary Education</li>
-						<li><b class="font-bold">Percentage:</b> 88</li>
-					</ul>
-				</section>
-			</div>
-			<h3 class="font-bold text-xl text-center">Other Information</h3>
-			<div class="super-section flex gap-2 justify-between my-3">
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Personal details</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">Father:</b> Rajesh Bhattacharjee</li>
-						<li><b class="font-bold">Mother:</b> Papiya Bhattacharya</li>
-						<li><b class="font-bold">Address:</b> Natunpally, Ward 8, P.O. Burdwan</li>
-						<li><b class="font-bold">PIN:</b> 713101</li>
-						<li><b class="font-bold">State:</b> West Bengal, India</li>
-						<li><b class="font-bold">Date of birth:</b> 27 May 2004 (as per Aadhaar)</li>
-						<li>
-							<b class="font-bold">Languages:</b>
-							<ul class="list-disc ml-6 my-1">
-								<li>Bengali (first)</li>
-								<li>English (second)</li>
-								<li>Hindi (self-learned)</li>
-							</ul>
-						</li>
-						<li>
-							<b class="font-bold">Hobbies:</b>
-							<ul class="list-disc ml-6 my-1">
-								<li>Coding</li>
-								<li>Photography</li>
-								<li>Space gaming</li>
-								<li>Travel</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Areas of expertise</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">Frontend:</b> CSS, HTML, JavaScript, React
-							<ul class="list-disc ml-6">
-								<li><b class="font-bold">Frameworks:</b> React</li>
-							</ul>
-						</li>
-						<li><b class="font-bold">Backend:</b> Node.js, Python
-							<ul class="list-disc ml-6">
-								<li><b class="font-bold">Frameworks:</b> Django, Express.js, Flask</li>
-							</ul>
-						</li>
-						<li><b class="font-bold">Programming:</b> C, Java, Python</li>
 						<li><b class="font-bold">Design:</b> Figma, FreeCAD, Inkscape</li>
-						<li><b class="font-bold">Operating Systems:</b> Windows 11, WSL</li>
+						<li><b class="font-bold">Development:</b> Git, GitHub, VS Code</li>
+						<li><b class="font-bold">Operating Systems:</b> Linux, Windows 11</li>
 					</ul>
-					<h4 class="font-bold text-lg">Projects</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li>Caesar Cipher</li>
-						<li>Converter</li>
-						<li>Number Type Checker</li>
-						<li>Weather</li>
-					</ul>
-				</section>
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Memberships</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li>IEI Students' Chapter CSE (Aug 2024-present)</li>
-					</ul>
-					<h4 class="font-bold text-lg">Hackathons</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li>Hack4Bengal 4.0 (20-22 Jul 2025)</li>
-						<li class="italic">Hello World Hacks (12 Apr-20 May 2025, missed)</li>
-						<li class="italic">HACKHAZARDS'25 (11 Apr-18 May 2025, missed)</li>
-						<li class="italic">FrostHacks 1.0 (7-8 Feb 2025, missed)</li>
-						<li class="italic">STATUSCODE1 (Aug 2024, missed)</li>
-						<li class="italic">Smart India Hackathon (Aug 2024, disqualified)</li>
-					</ul>
-					<h4 class="font-bold text-lg">Conferences and Seminars</h4>
-					<ul class="list-disc ml-6 my-1">
-						<li>Special Talk on AI by Dr. Anupam Basu (5 Apr 2025)</li>
-						<li>C3IT (28-29 Sep 2024, as volunteer)</li>
-						<li>IISER Kolkata Outreach (14 May 2024)</li>
-						<li>AOT Entrepreneurship Conclave (14 Aug 2024, as audience)</li>
-						<li>Symposium 2.0 (27 Jul 2024, as audience)</li>
-					</ul>
-				</section>
+				</div>
 			</div>
-			<div class="super-section flex gap-2 justify-between my-3">
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Other Tech Events</h4>
+		</section>
+		<section id="projects" class="my-8">
+			<h3 class="font-bold my-4 text-2xl text-center">Selected Projects</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Caesar Cipher</h4>
+					<hr>
+					<p class="my-1 text-justify">A cryptography application encrypting and decrypting a given text using
+						the
+						simple Caesar cipher algorithm. The interface is designed to be as user-friendly as possible.
+					</p>
 					<ul class="list-disc ml-6 my-1">
-						<li><b class="font-bold">College:</b>
-							<ul class="list-disc ml-6 my-1">
-								<li>TechFiesta (25-26 Apr 2025, UXplore & FreeForm)</li>
-								<li>UXopia 2.0 (12 Apr 2025)</li>
-								<li>Gnosis Week (24-29 Mar 2025)</li>
-								<li>TechFiesta (8-9 Apr 2024, Cynox & TraceIt)</li>
-								<li>Techquisitive 5.0 (19-23 Mar 2024)</li>
-							</ul>
-						</li>
-						<li><b class="font-bold">Other:</b>
-							<ul class="list-disc ml-6 my-1">
-								<li>Master of the Model Control Protocol (26 Apr 2025)</li>
-								<li>Build with AI (1-2 Oct 2024)</li>
-								<li>Apertre 2.0 (28 Feb-14 Apr 2025)</li>
-							</ul>
-						</li>
+						<li><b class="font-bold">Languages:</b> CSS, HTML, JavaScript</li>
+						<li><b class="font-bold">Frameworks:</b> Tailwind</li>
 					</ul>
-				</section>
-				<section class="flex-1 p-4 rounded-lg">
-					<h4 class="font-bold text-lg">Non-Tech Events</h4>
+					<div class="flex justify-around my-1">
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://github.com/soumyabrata23130/caesar-cipher">GitHub</a>
+						</div>
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://soumyabrata23130.github.io/caesar-cipher">Demo</a>
+						</div>
+					</div>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Converter</h4>
+					<hr>
+					<p class="my-1 text-justify">A unit conversion application supporting area, information, length,
+						mass,
+						pressure, temperature and volume. Great for everyday use and understanding how different units
+						relate to each other. The interface is designed to be as user-friendly as possible.</p>
 					<ul class="list-disc ml-6 my-1">
-						<li>KuRookShetra 2.0 (1-2 Dec 2024)</li>
-						<li>Arcadia (4 Nov 2024)</li>
-						<li>Mogojastro 2.0 (29 Aug 2024)</li>
+						<li><b class="font-bold">Languages:</b> CSS, HTML, JavaScript</li>
+						<li><b class="font-bold">Frameworks:</b> Tailwind</li>
 					</ul>
-				</section>
+					<div class="flex justify-around my-1">
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://github.com/soumyabrata23130/converter">GitHub</a>
+						</div>
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://soumyabrata23130.github.io/converter">Demo</a>
+						</div>
+					</div>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Weather</h4>
+					<hr>
+					<p class="my-1 text-justify">A web application that provides basic weather information from
+						OpenWeather's API. Enter a city, press "Get Weather" and you will get the basic weather
+						information
+						of the city, including temperature, air quality, humidity, pressure and wind speed. The
+						interface is
+						designed to be as user-friendly as possible.</p>
+					<ul class="list-disc ml-6 my-1">
+						<li><b class="font-bold">Languages:</b> CSS, HTML, JavaScript</li>
+						<li><b class="font-bold">Frameworks:</b> Tailwind</li>
+					</ul>
+					<div class="flex justify-around my-1">
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://github.com/soumyabrata23130/weather-html-css-js">GitHub</a>
+						</div>
+						<div class="m-3">
+							<a class="button cursor-pointer px-6 py-3 rounded-lg"
+								href="https://soumyabrata23130.github.io/weather-html-css-js">Demo</a>
+						</div>
+					</div>
+				</div>
 			</div>
-		</main>
-		<footer class="py-3 text-center">
-			<nav class="website-list flex flex-wrap gap-2 justify-center items-center mx-8 my-auto">
-				<a href="mailto:soumyabrata8974@gmail.com">Email</a> •
-				<a href="tel:+917908876512">Phone</a> •
-				<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
-				<a href="https://github.com/soumyabrata23130">GitHub</a> •
-				<a href="https://www.instagram.com/soumyabrata23130">Instagram</a> •
-				<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a> •
-				<a href="https://x.com/soumyabrata2705">X</a>
-			</nav>
-			<p class="m-2 text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
-		</footer>
-		<script src="theme-select.js"></script>
-	</body>
+		</section>
+		<section id="events">
+			<h3 class="font-bold my-4 text-2xl text-center">Events</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Hackathons</h4>
+					<hr>
+					<h5 class="font-bold my-1 text-center">2025</h5>
+					<p class="my-1 text-center">StatusCode 2 (upcoming)</p>
+					<p class="my-1 text-center">Hack4Bengal 4.0 (application rejected)</p>
+					<p class="my-1 text-center">Hello World Hacks (missed)</p>
+					<p class="my-1 text-center">HACKHAZARDS'25 (missed)</p>
+					<p class="my-1 text-center">FrostHacks (missed)</p>
+					<h5 class="font-bold my-1 text-center">2024</h5>
+					<p class="my-1 text-center">StatusCode 1 (missed)</p>
+					<p class="my-1 text-center">Smart India Hackathon (application rejected)</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Other Tech Events</h4>
+					<hr>
+					<h5 class="font-bold my-1 text-center">2025</h5>
+					<p class="my-1 text-center">Cloud Community Day Kolkata by GDG Kolkata (19 July)</p>
+					<p class="my-1 text-center">TechFiesta (25-26 April, UXplore & FreeForm)</p>
+					<p class="my-1 text-center">UXopia 2.0 (12 April)</p>
+					<p class="my-1 text-center">Gnosis Week (24-29 March)</p>
+					<p class="my-1 text-center">Apertre 2.0 (28 February-14 April)</p>
+					<h5 class="font-bold my-1 text-center">2024</h5>
+					<p class="my-1 text-center">TechFiesta (8-9 April, Cynox & TraceIt)</p>
+					<p class="my-1 text-center">Techquisitive 5.0 (19-23 March)</p>
+				</div>
+			</div>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Conferences and Seminars</h4>
+					<hr>
+					<h5 class="font-bold my-1 text-center">2025</h5>
+					<p class="my-1 text-center">AI in Software Engineering by Dr. Agostino Cortesi (3 July, missed)</p>
+					<p class="my-1 text-center">Special Talk on AI by Dr. Anupam Basu (5 April)</p>
+					<h5 class="font-bold my-1 text-center">2024</h5>
+					<p class="my-1 text-center">TCS Leadership Connect by Mr. Abhijit Niyogi (26 November)</p>
+					<p class="my-1 text-center">4th International Conference on Computer, Communication, Control &
+						Information
+						Technology (C3IT) (28-29 September)</p>
+					<p class="my-1 text-center">AOT Entrepreneurship Conclave by Mr. Manosiz Bhattacharyya (14 August)
+					</p>
+					<p class="my-1 text-center">Symposium 2.0 by Debabrata Samanta (27 July)</p>
+					<p class="my-1 text-center">IISER Kolkata Outreach (14 May)</p>
+					<p class="my-1 text-center">Polymers and Plastics in Everyday Life by Dr. Priyadarsi De (21 March)
+					</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Webinars</h4>
+					<hr>
+					<h5 class="font-bold my-1 text-center">2025</h5>
+					<p class="my-1 text-center">Code Your Future by IEI Students' Chapter CSE (12 May-present)</p>
+					<p class="my-1 text-center">Master of the Model Control Protocol by GDG Kolkata (26 April)</p>
+					<h5 class="font-bold my-1 text-center">2024</h5>
+					<p class="my-1 text-center">Blockchain & Solidity Unpacked by Naitik Sharma (22 December)</p>
+					<p class="my-1 text-center">Build with AI by GDG On Campus AOT (1-2 October)</p>
+					<p class="my-1 text-center">Generative AI and Large Language Models by Insha Manowar (30 September)
+					</p>
+					<p class="my-1 text-center">Freshman Induction (22 September)</p>
+				</div>
+			</div>
+		</section>
+		<section id="gaming" class="my-8">
+			<h3 class="font-bold my-4 text-2xl text-center">Gaming</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Accessories</h4>
+					<hr>
+					<p class="my-1 text-center">Victus by HP Gaming Laptop</p>
+					<p class="my-1 text-center">13th Gen Intel Core i5-13420H, 2.10 GHz, 16GB RAM</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Games</h4>
+					<hr>
+					<p class="my-1 text-center">Airport City (since 2025)</p>
+					<p class="my-1 text-center">Kerbal Space Program (KSP) (since 2025)</p>
+					<p class="my-1 text-center">Orbiter Space Flight Simulator (since 2018)</p>
+				</div>
+			</div>
+		</section>
+		<section id="education" class="my-8">
+			<h3 class="font-bold my-4 text-2xl text-center">Education</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Bachelor of Technology in<br>Computer Science and
+						Engineering</h4>
+					<hr>
+					<h5 class="my-1 text-center">Academy of Technology (2023-present)</h5>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">School Education</h4>
+					<hr>
+					<h5 class="my-1 text-center">Burdwan Town School (2011-2023)</h5>
+					<p class="my-1 text-center">87.4% in Higher Secondary Examination</p>
+					<p class="my-1 text-center">88% in Madhyamik Pariksha (Secondary Examination)</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Preschool Education</h4>
+					<hr>
+					<h5 class="my-1 text-center">Junior Kindergarten at Saraswati Shishu Mandir (2009)</h5>
+					<h5 class="my-1 text-center">Senior Kindergarten at Burdwan Town School (2010)</h5>
+				</div>
+			</div>
+		</section>
+		<section id="personal" class="my-8">
+			<h3 class="font-bold my-4 text-2xl text-center">Personal Details</h3>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Birth</h4>
+					<hr>
+					<p class="my-1 text-center">27 May 2004</p>
+					<p class="my-1 text-center">SDO Hospital, P.O. Bolpur</p>
+					<p class="my-1 text-center">Dist: Birbhum, PIN: 731204</p>
+					<p class="my-1 text-center">State: West Bengal, India</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Parents</h4>
+					<hr>
+					<p class="my-1 text-center">Papiya Bhattacharya (née Goswami; born 1980)</p>
+					<p class="my-1 text-center">Rajesh Bhattacharjee (born 1974)</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Address</h4>
+					<hr>
+					<p class="my-1 text-center">9, Natunpally, Ward 8, P.O. & P.S. Burdwan</p>
+					<p class="my-1 text-center">Dist: Purba Bardhaman, PIN: 713101</p>
+					<p class="my-1 text-center">State: West Bengal, India</p>
+				</div>
+			</div>
+			<div class="section-flex flex gap-8 justify-around my-3">
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Languages</h4>
+					<hr>
+					<p class="my-1 text-center">Bengali (first)</p>
+					<p class="my-1 text-center">English (second)</p>
+					<p class="my-1 text-center">Hindi (self-learned)</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Hobbies</h4>
+					<hr>
+					<p class="my-1 text-center">Coding</p>
+					<p class="my-1 text-center">Design</p>
+					<p class="my-1 text-center">Gaming</p>
+					<p class="my-1 text-center">Photography</p>
+					<p class="my-1 text-center">Travel</p>
+				</div>
+				<div class="card flex-1 px-4 py-2 rounded-xl">
+					<h4 class="font-bold text-lg my-1 text-center">Memberships</h4>
+					<hr>
+					<p class="my-1 text-center">IEI Students' Chapter CSE (2024-present)</p>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="py-3 text-center">
+		<nav class="website-list flex flex-wrap gap-8 justify-center items-center mx-8 my-auto">
+			<a href="mailto:soumyabrata8974@gmail.com">Email</a> •
+			<a href="tel:+917908876512">Phone</a> •
+			<a href="https://www.facebook.com/soumyabrata.bhattacharjee.58">Facebook</a> •
+			<a href="https://github.com/soumyabrata23130">GitHub</a> •
+			<a href="https://www.instagram.com/soumyabrata23130">Instagram</a> •
+			<a href="https://www.linkedin.com/in/soumyabrata-bhattacharjee-8a3aa5308">LinkedIn</a> •
+			<a href="https://x.com/soumyabrata2705">X</a>
+		</nav>
+		<p class="m-2 text-sm">Copyright © 2022-2025 Soumyabrata Bhattacharjee</p>
+	</footer>
+	<script src="theme-select.js"></script>
+</body>
+
 </html>

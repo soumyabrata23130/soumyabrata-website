@@ -6,7 +6,7 @@
 	:root {
 		--background: #f0f0f2;
 		--box: white;
-		--back: lightgreen;
+		--button: lightgreen;
 		--foreground: black;
 	}
 }
@@ -15,7 +15,7 @@
 	:root {
 		--background: #0a0a0a;
 		--box: #202020;
-		--back: darkgreen;
+		--button: darkgreen;
 		--foreground: #ededed;
 	}
 }
@@ -45,7 +45,7 @@ header {
 
 .navbar a {
 	cursor: pointer;
-	padding: 0.5rem 2rem;
+	padding: 0.8rem 8rem;
 }
 
 .navbar a:hover {
@@ -55,10 +55,10 @@ header {
 main {
 	background: var(--background);
 	flex: 1;
-	padding: 1rem;
+	margin: 1rem 4rem;
 }
 
-section {
+.card {
 	background: var(--box);
 	box-shadow: 3px 2.5px 7px rgba(0, 0, 0, 0.2);
 }
@@ -73,8 +73,8 @@ footer {
 	text-decoration: underline;
 }
 
-.back-button {
-	background: var(--back);
+.button {
+	background: var(--button);
 }
 
 img, select {
@@ -89,7 +89,7 @@ img {
 	.navbar a {
 		padding: 0.5rem 1rem;
 	}
-	.super-section {
+	.section-flex {
 		flex-direction: column;
 	}
 	h1, h2, h3, h4, h5, h6 {
