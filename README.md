@@ -6,6 +6,6 @@ Demo: https://soumyabrata23130.github.io/soumyabrata-website
 
 ## Known Issues
 
---Manual dark-light switch is commented due to some issues.
---The top section links don't appear in mobile mode.
---Reloading the website always leads to the top instead of a given section.
+- Manual dark-light switch is commented due to some issues.
+- The top section links don't appear in mobile mode.
+- Reloading the website always leads to the top instead of a given section.
