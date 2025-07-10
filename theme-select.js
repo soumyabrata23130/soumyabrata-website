@@ -1,4 +1,5 @@
-document.getElementById("theme-select").addEventListener("change", function() {
+<!--
+document.getElementById("theme-select").addEventListener("change", function () {
 	const theme=document.getElementById("theme-select").value
 	console.log("Theme: " + theme)
 
@@ -8,7 +9,7 @@ document.getElementById("theme-select").addEventListener("change", function() {
 				color-scheme: dark;
 				--background: #0a0a0a;
 				--box: #202020;
-				--back: darkgreen;
+				--button: darkgreen;
 				--foreground: #ededed;
 			`
 			break
@@ -17,7 +18,7 @@ document.getElementById("theme-select").addEventListener("change", function() {
 				color-scheme: light;
 				--background: #f0f0f2;
 				--box: white;
-				--back: lightgreen;
+				--button: lightgreen;
 				--foreground: black;
 			`
 			break
@@ -25,3 +26,4 @@ document.getElementById("theme-select").addEventListener("change", function() {
 			document.querySelector("html").style.cssText = ""
 	}
 })
+-->
