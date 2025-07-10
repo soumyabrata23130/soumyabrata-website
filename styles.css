@@ -93,7 +93,7 @@ section {
 }
 
 .content {
-	max-width: 90%;
+	max-width: 95%;
 }
 
 .section-flex {
@@ -124,20 +124,6 @@ section {
 	flex: 1;
 }
 
-.project-tech {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.5rem;
-	justify-content: center;
-	margin: 0.4rem;
-}
-
-.project-tech span {
-	background: var(--background);
-	font-size: 0.8rem;
-	padding: 0.4rem 0.8rem;
-}
-
 .project-links {
 	display: flex;
 	flex-wrap: wrap;
@@ -166,6 +152,20 @@ footer {
 	display: flex;
 	gap: 1rem;
 	margin: 0.8rem;
+}
+
+.tech {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.5rem;
+	justify-content: center;
+	margin: 0.4rem;
+}
+
+.tech li {
+	background: var(--background);
+	font-size: 0.8rem;
+	padding: 0.4rem 0.8rem;
 }
 
 .button {
