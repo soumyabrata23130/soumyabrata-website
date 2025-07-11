@@ -1,25 +1,19 @@
 :root {
 	color-scheme: light;
+	--background: #f0f0f2;
+	--card: white;
+	--button: lightgreen;
+	--button-hover: green;
+	--foreground: black;
 }
 
-@media (prefers-color-scheme: light) {
-	:root {
-		--background: #f0f0f2;
-		--box: white;
-		--button: lightgreen;
-		--button-hover: green;
-		--foreground: black;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--background: #0a0a0a;
-		--box: #202020;
-		--button: darkgreen;
-		--button-hover: green;
-		--foreground: #ededed;
-	}
+[data-theme="dark"] {
+	color-scheme: dark;
+	--background: #0a0a0a;
+	--card: #202020;
+	--button: darkgreen;
+	--button-hover: green;
+	--foreground: #ededed;
 }
 
 html, body {
@@ -37,7 +31,7 @@ html, body {
 }
 
 header {
-	background: var(--box);
+	background: var(--card);
 	box-shadow: 0px 2.5px 7px rgba(0, 0, 0, 0.2);
 	padding: 0 2rem;
 	position: sticky;
@@ -58,20 +52,37 @@ nav {
 	margin-right: auto;
 }
 
-nav ul {
+.nav-menu {
 	display: flex;
 	margin: 0.8rem;
 }
 
-nav a {
+.nav-menu a {
 	padding: 1rem;
 }
 
-nav a:hover {
+.nav-menu a:hover {
 	background: var(--background);
 	text-decoration: none;
 }
 
+.hamburger {
+	border: solid 1px var(--foreground);
+	cursor: pointer;
+	display: none;
+	flex-direction: column;
+	margin: 0.4rem;
+	padding: 0.1rem 0.3rem;
+}
+
+.hamburger span {
+	background: var(--foreground);
+	height: 3px;
+	margin: 3px 0;
+	width: 25px;
+}
+
+/* main */
 main {
 	background: var(--background);
 	flex: 1;
@@ -103,13 +114,13 @@ section {
 }
 
 .about-card {
-	background: var(--box);
+	background: var(--card);
 	box-shadow: 3px 2.5px 7px rgba(0, 0, 0, 0.2);
 	padding: 1rem;
 }
 
 .card {
-	background: var(--box);
+	background: var(--card);
 	box-shadow: 3px 2.5px 7px rgba(0, 0, 0, 0.2);
 	flex: 1 1 30%;
 	padding: 1rem;
@@ -133,7 +144,7 @@ section {
 }
 
 footer {
-	background: var(--box);
+	background: var(--card);
 	box-shadow: 0px -2.5px 7px rgba(0, 0, 0, 0.2);
 	width: 100vw;
 }
@@ -201,8 +212,30 @@ img {
 		flex-direction: row;
 		justify-content: space-between;
 	}
-	nav ul {
+	.hamburger {
+		display: flex;
+	}
+	.nav-menu {
+		background: var(--card);
 		display: none;
+		flex-direction: column;
+		left: 0rem;
+		margin-right: 0;
+		position: fixed;
+		top: 2rem;
+		width: 16rem;
+	}
+	.nav-menu.active {
+		display: flex;
+	}
+	.nav-menu li {
+		margin: 0.1rem 0;
+	}
+	.nav-menu a {
+		max-width: 30rem;
+		padding: 0.2rem;
+		padding-left: 1rem;
+		width: 100%;
 	}
 }
 
@@ -210,16 +243,7 @@ img {
 	img {
 		margin-top: 2rem;
 	}
-	#hero, #about {
-		min-height: 100vh;
-	}
 	.section-flex {
 		flex-direction: column;
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	html {
-		color-scheme: dark;
 	}
 }
