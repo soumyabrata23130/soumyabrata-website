@@ -8,7 +8,6 @@
 	<link rel="stylesheet" href="../styles.css" />
 	<style>
 		main p {
-			margin: 0.2rem;
 			text-indent: 1.5rem;
 		}
 	</style>
@@ -16,18 +15,16 @@
 
 <body>
 	<header>
-		<div class="flex justify-around items-center text-center">
-			<div class="flex-1 m-3">
-				<a class="button cursor-pointer px-6 py-3 rounded-lg" href="../blogs.html">Back</a>
-			</div>
-			<label class="flex-1">Select theme:
+		<nav>
+			<label class="theme-select">Select theme:
 				<select class="border p-1" id="theme-select">
-					<option value="default">System default</option>
+					<option value="system">System default</option>
 					<option value="dark">Dark</option>
 					<option value="light">Light</option>
 				</select>
 			</label>
-		</div>
+			<a class="button rounded-lg" href="../index.html#blogs">Back</a>
+		</nav>
 	</header>
 	<main>
 		<div class="m-2 text-center">
