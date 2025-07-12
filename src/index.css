@@ -9,7 +9,7 @@
   --text: black;
 }
 
-[data-theme="dark"] {
+:root.dark {
   color-scheme: dark;
   --background: #0a0a0a;
   --foreground: #202020;

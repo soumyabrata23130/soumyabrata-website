@@ -1,53 +1,40 @@
 import "./header.css";
+import { useEffect } from "react";
 
-function themeSelect() {
-  const themeSelect = document.getElementById("theme-select");
+export default function Header() {
+  useEffect(() => {
+    initTheme();
+  }, []);
+
+  function initTheme() {
+    const savedTheme = localStorage.getItem("theme") || "system";
+    document.getElementById("theme-select").value = savedTheme;
+    applyTheme(savedTheme);
+  }
 
   function applyTheme(theme) {
     if (theme === "dark" || theme === "light") {
-      document.documentElement.setAttribute("data-theme", theme);
+      localStorage.theme = theme;
     } else if (theme === "system") {
-      const systemDark = window.matchMedia(
-        "(prefers-color-scheme: dark)"
-      ).matches;
-      document.documentElement.setAttribute(
-        "data-theme",
-        systemDark ? "dark" : "light"
-      );
+      localStorage.removeItem("theme");
     }
+
+    document.documentElement.classList.toggle(
+      "dark",
+      localStorage.theme === "dark" ||
+        (!("theme" in localStorage) &&
+          window.matchMedia("(prefers-color-scheme: dark)").matches)
+    );
   }
 
-  function setTheme(theme) {
-    localStorage.setItem("theme-preference", theme);
-    applyTheme(theme);
+  function setTheme(e) {
+    applyTheme(e.target.value);
   }
 
-  function initTheme() {
-    const savedTheme = localStorage.getItem("theme-preference") || "system";
-    themeSelect.value = savedTheme;
-    applyTheme(savedTheme);
-
-    if (savedTheme === "system") {
-      window
-        .matchMedia("(prefers-coloe-scheme: dark)")
-        .addEventListener("change", () => {
-          applyTheme("system");
-        });
-    }
+  function mobileMenu() {
+    document.querySelector(".nav-menu").classList.toggle("active");
   }
 
-  themeSelect.addEventListener("change", (e) => {
-    setTheme(e.target.value);
-  });
-
-  initTheme();
-}
-
-function mobileMenu() {
-  document.querySelector(".nav-menu").classList.toggle("active");
-}
-
-export default function Header() {
   return (
     <header>
       <nav>
@@ -56,7 +43,7 @@ export default function Header() {
           <select
             className="border m-2 p-1 rounded-md"
             id="theme-select"
-            onChange={themeSelect}
+            onChange={setTheme}
           >
             <option value="system">System default</option>
             <option value="dark">Dark</option>
@@ -102,7 +89,7 @@ export default function Header() {
             viewBox="0 0 16 16"
           >
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
             />
           </svg>
