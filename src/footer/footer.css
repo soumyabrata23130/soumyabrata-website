@@ -1,0 +1,19 @@
+footer {
+  background: var(--foreground);
+  box-shadow: 0px -2.5px 7px rgba(0, 0, 0, 0.2);
+  width: 100vw;
+}
+
+.copyright-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.copyright-box ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: center;
+}
