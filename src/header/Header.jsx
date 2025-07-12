@@ -54,7 +54,7 @@ export default function Header() {
         <label className="theme-select">
           Select theme:
           <select
-            className="border m-2 p-1 rounded-sm"
+            className="border m-2 p-1 rounded-md"
             id="theme-select"
             onChange={themeSelect}
           >

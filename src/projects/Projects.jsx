@@ -5,9 +5,7 @@ export default function Projects() {
         <h3 className="font-bold my-4 text-2xl text-center">Projects</h3>
         <div className="section-flex">
           <div className="card rounded-xl">
-            <h4 className="font-bold text-lg my-1 text-center">
-              Caesar Cipher
-            </h4>
+            <h4 className="font-bold text-lg text-center">Caesar Cipher</h4>
             <hr />
             <p className="flex-1 my-1 text-justify">
               A cryptography application encrypting and decrypting a given text
@@ -22,13 +20,13 @@ export default function Projects() {
             </ul>
             <div className="flex gap-2 justify-center wrap">
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://github.com/soumyabrata23130/caesar-cipher"
               >
                 GitHub
               </a>
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://soumyabrata23130.github.io/caesar-cipher"
               >
                 Demo
@@ -36,7 +34,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card rounded-xl">
-            <h4 className="font-bold text-lg my-1 text-center">Converter</h4>
+            <h4 className="font-bold text-lg text-center">Converter</h4>
             <hr />
             <p className="flex-1 my-1 text-justify">
               A unit conversion application supporting area, information,
@@ -52,13 +50,13 @@ export default function Projects() {
             </ul>
             <div className="flex gap-2 justify-center wrap">
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://github.com/soumyabrata23130/converter"
               >
                 GitHub
               </a>
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://soumyabrata23130.github.io/converter"
               >
                 Demo
@@ -66,7 +64,7 @@ export default function Projects() {
             </div>
           </div>
           <div className="card rounded-xl">
-            <h4 className="font-bold text-lg my-1 text-center">Weather</h4>
+            <h4 className="font-bold text-lg text-center">Weather</h4>
             <hr />
             <p className="flex-1 my-1 text-justify">
               A web application that provides basic weather information from
@@ -83,13 +81,13 @@ export default function Projects() {
             </ul>
             <div className="flex gap-2 justify-center wrap">
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://github.com/soumyabrata23130/weather-html-css-js"
               >
                 GitHub
               </a>
               <a
-                className="button rounded-lg"
+                className="button"
                 href="https://soumyabrata23130.github.io/weather-html-css-js"
               >
                 Demo

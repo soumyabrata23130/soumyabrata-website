@@ -63,6 +63,7 @@ select {
     display: none;
   }
   .nav-menu.active {
+    border-bottom-left-radius: var(--radius-md);
     display: flex;
     background: var(--foreground);
     flex-direction: column;
