@@ -6,6 +6,6 @@ Demo: https://soumyabrata23130.github.io/soumyabrata-website
 
 ## Tech Stack
 
--- React
--- Tailwind
--- Vite
+- React
+- Tailwind
+- Vite
