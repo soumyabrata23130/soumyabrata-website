@@ -4,7 +4,7 @@ import { useEffect } from "react";
 export default function Header() {
   useEffect(() => {
     initTheme();
-  }, []);
+  });
 
   function initTheme() {
     const savedTheme = localStorage.getItem("theme") || "system";
