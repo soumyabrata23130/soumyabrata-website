@@ -74,10 +74,9 @@ export default function Projects() {
               interface is designed to be as user-friendly as possible.
             </p>
             <ul className="tech">
-              <li>CSS</li>
-              <li>HTML</li>
-              <li>JavaScript</li>
+              <li>React</li>
               <li>Tailwind</li>
+              <li>Vite</li>
             </ul>
             <div className="flex gap-2 justify-center wrap">
               <a
