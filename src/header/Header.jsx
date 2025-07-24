@@ -14,7 +14,7 @@ export default function Header() {
 
   function applyTheme(theme) {
     if (theme === "dark" || theme === "light") {
-      localStorage.theme = theme;
+      localStorage.setItem("theme", theme);
     } else if (theme === "system") {
       localStorage.removeItem("theme");
     }
@@ -22,13 +22,14 @@ export default function Header() {
     document.documentElement.classList.toggle(
       "dark",
       localStorage.theme === "dark" ||
-        (!("theme" in localStorage) &&
-          window.matchMedia("(prefers-color-scheme: dark)").matches)
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
     );
   }
 
   function setTheme(e) {
     applyTheme(e.target.value);
+    document.getElementById("theme-select").value = e.target.value;
   }
 
   function mobileMenu() {
