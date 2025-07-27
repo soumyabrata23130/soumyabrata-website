@@ -3,7 +3,7 @@ export default function Education() {
     <section id="education">
       <h3 className="font-bold my-4 text-2xl text-center">Education</h3>
       <div className="section-flex">
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">
             Bachelor of Technology in
             <br />
@@ -14,7 +14,7 @@ export default function Education() {
             Academy of Technology (2023-present)
           </h5>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">
             School Education (State Board)
           </h4>
@@ -29,7 +29,7 @@ export default function Education() {
             88% in Madhyamik Pariksha (Secondary Examination)
           </p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">
             Preschool Education
           </h4>

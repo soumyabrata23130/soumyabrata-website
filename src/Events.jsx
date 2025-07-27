@@ -3,7 +3,7 @@ export default function Events() {
     <section id="events">
       <h3 className="font-bold my-4 text-2xl text-center">Events</h3>
       <div className="section-flex">
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Hackathons</h4>
           <hr />
           <h5 className="font-bold my-1 text-center">2025</h5>
@@ -20,7 +20,7 @@ export default function Events() {
             Smart India Hackathon (application rejected)
           </p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Other Tech Events</h4>
           <hr />
           <h5 className="font-bold my-1 text-center">2025</h5>
@@ -41,7 +41,7 @@ export default function Events() {
           </p>
           <p className="my-1 text-center">Techquisitive 5.0 (19-23 March)</p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">
             Conferences and Seminars
           </h4>
@@ -75,7 +75,7 @@ export default function Events() {
             March)
           </p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Webinars</h4>
           <hr />
           <h5 className="font-bold my-1 text-center">2025</h5>

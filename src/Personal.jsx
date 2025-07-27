@@ -5,7 +5,7 @@ export default function Personal() {
         Personal Details
       </h3>
       <div className="section-flex">
-        <div className="card rounded-xl">
+        <div className="card w-1/5 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Birth</h4>
           <hr />
           <p className="my-1 text-center">27 May 2004</p>
@@ -13,7 +13,7 @@ export default function Personal() {
           <p className="my-1 text-center">Dist: Birbhum, PIN: 731204</p>
           <p className="my-1 text-center">State: West Bengal, India</p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/5 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Parents</h4>
           <hr />
           <p className="my-1 text-center">
@@ -21,14 +21,14 @@ export default function Personal() {
           </p>
           <p className="my-1 text-center">Rajesh Bhattacharjee (born 1974)</p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/5 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Languages</h4>
           <hr />
           <p className="my-1 text-center">Bengali (first)</p>
           <p className="my-1 text-center">English (second)</p>
           <p className="my-1 text-center">Hindi (self-learned)</p>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/5 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Memberships</h4>
           <hr />
           <p className="my-1 text-center">

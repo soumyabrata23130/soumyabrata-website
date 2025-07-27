@@ -37,7 +37,7 @@ export default function Header() {
   }
 
   return (
-    <header>
+    <header className="header">
       <nav>
         <label className="theme-select">
           Select theme:

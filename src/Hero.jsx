@@ -11,14 +11,14 @@ export default function Hero() {
           width="180"
           height="180"
         />
-        <div>
-          <h1 className="font-bold my-2 text-4xl text-center">
+        <header className="flex flex-col items-center">
+          <h1 className="font-bold my-1 text-4xl text-center">
             Soumyabrata Bhattacharjee
           </h1>
           <p className="text-xl my-2 text-center">
             Web Developer, UI/UX Designer and Gamer
           </p>
-          <div className="flex flex-wrap gap-2 justify-center my-1">
+          <div className="flex flex-wrap gap-3 justify-center my-1">
             <a className="button rounded-lg" href="#projects">
               Projects
             </a>
@@ -29,7 +29,7 @@ export default function Hero() {
               Résumé
             </a>
           </div>
-        </div>
+        </header>
       </div>
     </section>
   );

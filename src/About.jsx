@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section id="about">
       <h3 className="font-bold my-4 text-2xl text-center">About me</h3>
-      <div className="card flex-0 rounded-xl">
+      <div className="card rounded-xl">
         <p className="text-justify">
           Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer
           science and engineering student and a tech enthusiast. Web

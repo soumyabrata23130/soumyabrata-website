@@ -3,7 +3,7 @@ export default function Projects() {
     <section id="projects">
       <h3 className="font-bold my-4 text-2xl text-center">Projects</h3>
       <div className="section-flex">
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Caesar Cipher</h4>
           <hr />
           <p className="flex-1 my-1 text-justify">
@@ -11,7 +11,7 @@ export default function Projects() {
             using the simple Caesar cipher algorithm. The interface is
             designed to be as user-friendly as possible.
           </p>
-          <ul className="tech">
+          <ul className="tags">
             <li>CSS</li>
             <li>HTML</li>
             <li>JavaScript</li>
@@ -32,7 +32,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Converter</h4>
           <hr />
           <p className="flex-1 my-1 text-justify">
@@ -41,7 +41,7 @@ export default function Projects() {
             use and understanding how different units relate to each other.
             The interface is designed to be as user-friendly as possible.
           </p>
-          <ul className="tech">
+          <ul className="tags">
             <li>CSS</li>
             <li>HTML</li>
             <li>JavaScript</li>
@@ -62,7 +62,7 @@ export default function Projects() {
             </a>
           </div>
         </div>
-        <div className="card rounded-xl">
+        <div className="card w-1/4 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Weather</h4>
           <hr />
           <p className="flex-1 my-1 text-justify">
@@ -72,7 +72,7 @@ export default function Projects() {
             temperature, air quality, humidity, pressure and wind speed. The
             interface is designed to be as user-friendly as possible.
           </p>
-          <ul className="tech">
+          <ul className="tags">
             <li>React</li>
             <li>Tailwind</li>
             <li>Vite</li>
