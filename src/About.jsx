@@ -4,15 +4,7 @@ export default function About() {
       <h3 className="font-bold my-4 text-2xl text-center">About me</h3>
       <div className="card rounded-xl">
         <p className="text-justify">
-          Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer
-          science and engineering student and a tech enthusiast. Web
-          development is my area of expertise. I have mastered C, Java, and
-          Python programming languages, along with frontend development in
-          HTML, CSS, JavaScript and React. I have also learnt Figma to design
-          complex websites before coding them. I am currently learning
-          Node.js, Flask and Flutter. My goal is to complete my study in B.
-          Tech and secure a challenging job where I can provide my expertise
-          and become a seasoned professional in app and web development.
+          Hello, I'm Soumyabrata Bhattacharjee. Born in 2004, I am a computer science and engineering student and a tech enthusiast. I am passionate about computer science, with a strong foundation in programming. I'm currently learning frontend development, object-oriented programming and machine learning. I am open to roles in frontend development, support engineering, or related areas that align with my technical skillset and learning mindset.
         </p>
       </div>
     </section>

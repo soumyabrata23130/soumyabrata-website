@@ -16,29 +16,37 @@ export default function Skills() {
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Frameworks</h4>
+          <h4 className="font-bold text-lg text-center">JavaScript Frameworks</h4>
           <hr />
           <ul className="tags">
             <li>Bootstrap</li>
             <li>Flask</li>
+            <li>React</li>
             <li>Tailwind</li>
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Libraries</h4>
+          <h4 className="font-bold text-lg text-center">Python Libraries</h4>
           <hr />
           <ul className="tags">
             <li>Matplotlib</li>
             <li>NumPy</li>
-            <li>React</li>
+            <li>Pandas</li>
             <li>Tkinter</li>
+          </ul>
+        </div>
+        <div className="card w-1/6 flex-auto rounded-xl">
+          <h4 className="font-bold text-lg text-center">Databases</h4>
+          <hr />
+          <ul className="tags">
+            <li>MySQL</li>
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">
           <h4 className="font-bold text-lg text-center">Operating Systems</h4>
           <hr />
           <ul className="tags">
-            <li>Linux</li>
+            <li>Ubuntu (WSL)</li>
             <li>Windows 11</li>
           </ul>
         </div>
