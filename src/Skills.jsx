@@ -8,21 +8,31 @@ export default function Skills() {
           <hr />
           <ul className="tags">
             <li>C</li>
-            <li>CSS</li>
-            <li>HTML</li>
             <li>Java</li>
             <li>JavaScript</li>
             <li>Python</li>
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">JavaScript Frameworks</h4>
+          <h4 className="font-bold text-lg text-center">Backend</h4>
+          <hr />
+          <ul className="tags">
+            <li>Express</li>
+            <li>Node.js</li>
+            <li>SQLite</li>
+          </ul>
+        </div>
+        <div className="card w-1/6 flex-auto rounded-xl">
+          <h4 className="font-bold text-lg text-center">Frontend</h4>
           <hr />
           <ul className="tags">
             <li>Bootstrap</li>
-            <li>Flask</li>
+            <li>CSS</li>
+            <li>HTML</li>
+            <li>JavaScript</li>
             <li>React</li>
             <li>Tailwind</li>
+            <li>Vite</li>
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">
@@ -33,13 +43,6 @@ export default function Skills() {
             <li>NumPy</li>
             <li>Pandas</li>
             <li>Tkinter</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Databases</h4>
-          <hr />
-          <ul className="tags">
-            <li>MySQL</li>
           </ul>
         </div>
         <div className="card w-1/6 flex-auto rounded-xl">

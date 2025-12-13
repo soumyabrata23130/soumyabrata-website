@@ -4,29 +4,11 @@ export default function Events() {
       <h3 className="font-bold my-4 text-2xl text-center">Events</h3>
       <div className="section-flex">
         <div className="card w-1/4 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Hackathons</h4>
+          <h4 className="font-bold text-lg text-center">Tech Events</h4>
           <hr />
           <h5 className="font-bold my-1 text-center">2025</h5>
-          <p className="my-1 text-center">StatusCode 2 (upcoming)</p>
-          <p className="my-1 text-center">
-            Hack4Bengal 4.0 (application rejected)
-          </p>
-          <p className="my-1 text-center">Hello World Hacks (missed)</p>
-          <p className="my-1 text-center">HACKHAZARDS'25 (missed)</p>
-          <p className="my-1 text-center">FrostHacks (missed)</p>
-          <h5 className="font-bold my-1 text-center">2024</h5>
-          <p className="my-1 text-center">StatusCode 1 (missed)</p>
-          <p className="my-1 text-center">
-            Smart India Hackathon (application rejected)
-          </p>
-        </div>
-        <div className="card w-1/4 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Other Tech Events</h4>
-          <hr />
-          <h5 className="font-bold my-1 text-center">2025</h5>
-          <p className="my-1 text-center">
-            Cloud Community Day Kolkata by GDG Kolkata (19 July)
-          </p>
+          <p className="my-1 text-center">Smart India Hackathon</p>
+          <p className="my-1 text-center">IOTricity S02</p>
           <p className="my-1 text-center">
             TechFiesta (25-26 April, UXplore & FreeForm)
           </p>
@@ -35,7 +17,21 @@ export default function Events() {
           <p className="my-1 text-center">
             Apertre 2.0 (28 February-14 April)
           </p>
+          {/*<p className="my-1 text-center">StatusCode 2 (application rejected)</p>
+          <p className="my-1 text-center">
+          Cloud Community Day Kolkata by GDG Kolkata (19 July)
+          </p>
+          <p className="my-1 text-center">
+            Hack4Bengal 4.0 (application rejected)
+          </p>
+          <p className="my-1 text-center">Hello World Hacks (missed)</p>
+          <p className="my-1 text-center">HACKHAZARDS'25 (missed)</p>
+          <p className="my-1 text-center">FrostHacks (missed)</p>*/}
           <h5 className="font-bold my-1 text-center">2024</h5>
+          {/*<p className="my-1 text-center">StatusCode 1 (missed)</p>
+          <p className="my-1 text-center">
+            Smart India Hackathon (application rejected)
+          </p>*/}
           <p className="my-1 text-center">
             TechFiesta (8-9 April, Cynox & TraceIt)
           </p>

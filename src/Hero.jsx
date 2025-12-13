@@ -16,7 +16,7 @@ export default function Hero() {
             Soumyabrata Bhattacharjee
           </h1>
           <p className="text-xl my-2 text-center">
-            Web Developer, UI/UX Designer and Gamer
+            Web Developer
           </p>
           <div className="flex flex-wrap gap-3 justify-center my-1">
             <a className="button rounded-lg" href="#projects">
