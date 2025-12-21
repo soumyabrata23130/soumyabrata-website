@@ -1,34 +1,35 @@
+import Entry from "./Entry.jsx";
+
 export default function Contact() {
   return (
     <section id="contact">
       <h3 className="font-bold my-4 text-2xl text-center">Get In Touch</h3>
-      <div className="section-flex text-center">
-        <div className="card w-1/3 flex-auto rounded-xl">
-          <p>Soumyabrata Bhattacharjee</p>
-          <p>9, Natunpally, Ward 8</p>
-          <p>P.O. & P.S. Burdwan</p>
-          <p>Dist: Purba Bardhaman, PIN: 713101</p>
-          <p>State: West Bengal, India</p>
-        </div>
-        <div className="card w-1/3 flex-auto rounded-xl">
-          <ul>
-            <li>
-              <a href="tel:+917908876512">+91 7908876512</a>
-            </li>
-            <li>
-              <a href="mailto:soumyabrata8974@gmail.com">
-                soumyabrata8974@gmail.com
-              </a>
-              &nbsp;(main)
-            </li>
-            <li>
-              <a href="mailto:soumyabrata8974@gmail.com">
-                soumyabrata23130@gmail.com
-              </a>{" "}
-              (alternative)
-            </li>
-          </ul>
-        </div>
+      <div className="grid gap-4">
+        <Entry
+          title="Address"
+          content={
+            <div>
+              <p>9, Natunpally, Ward 8<br />
+                P.O. & P.S. Burdwan<br />
+                Dist: Purba Bardhaman, PIN: 713101<br />
+                State: West Bengal, India</p>
+            </div>
+          }
+        />
+        <Entry
+          title="Phone"
+          content={
+            <a href="tel:+917908876512">+91 7908876512</a>
+          }
+        />
+        <Entry
+          title="Email"
+          content={
+            <a href="mailto:soumyabrata23130@gmail.com">
+              soumyabrata23130@gmail.com
+            </a>
+          }
+        />
       </div>
     </section>
   );

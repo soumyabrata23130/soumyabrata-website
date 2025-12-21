@@ -55,9 +55,9 @@ export default function Header() {
           <li>
             <a href="#hero">Home</a>
           </li>
-          <li>
+          {/*<li>
             <a href="#about">About Me</a>
-          </li>
+          </li>*/}
           <li>
             <a href="#skills">Skills</a>
           </li>
@@ -65,14 +65,14 @@ export default function Header() {
             <a href="#projects">Projects</a>
           </li>
           <li>
-            <a href="#events">Events</a>
-          </li>
-          <li>
-            <a href="#gaming">Gaming</a>
-          </li>
-          <li>
             <a href="#education">Education</a>
           </li>
+          <li>
+            <a href="#events">Events</a>
+          </li>
+          {/*<li>
+            <a href="#gaming">Gaming</a>
+          </li>*/}
           <li>
             <a href="#personal">Personal Details</a>
           </li>

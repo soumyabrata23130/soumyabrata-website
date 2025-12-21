@@ -1,46 +1,33 @@
+function Entry({ year, degree, school, location }) {
+  return (
+    <div className="card rounded-xl grid grid-cols-3 gap-8">
+      <h4 className="font-bold text-lg text-right">{year}</h4>
+      <div className="col-span-2 text-left">
+        <p>{degree}</p>
+        <p>{school}</p>
+        <p>{location}</p>
+      </div>
+    </div>
+  );
+}
+
 export default function Education() {
   return (
     <section id="education">
       <h3 className="font-bold my-4 text-2xl text-center">Education</h3>
-      <div className="section-flex">
-        <div className="card w-1/4 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">
-            Bachelor of Technology in
-            <br />
-            Computer Science and Engineering
-          </h4>
-          <hr />
-          <h5 className="my-1 text-center">
-            Academy of Technology (2023-present)
-          </h5>
-        </div>
-        <div className="card w-1/4 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">
-            School Education (State Board)
-          </h4>
-          <hr />
-          <h5 className="my-1 text-center">
-            Burdwan Town School (2011-2023)
-          </h5>
-          <p className="my-1 text-center">
-            87.4% in Higher Secondary Examination
-          </p>
-          <p className="my-1 text-center">
-            88% in Madhyamik Pariksha (Secondary Examination)
-          </p>
-        </div>
-        <div className="card w-1/4 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">
-            Preschool Education
-          </h4>
-          <hr />
-          <h5 className="my-1 text-center">
-            Junior Kindergarten at Saraswati Shishu Mandir (2009)
-          </h5>
-          <h5 className="my-1 text-center">
-            Senior Kindergarten at Burdwan Town School (2010)
-          </h5>
-        </div>
+      <div className="grid gap-4">
+        <Entry
+          year="2023-2027"
+          degree="Bachelor of Technology in Computer Science and Engineering"
+          school="Academy of Technology"
+          location="Adisaptagram, WB"
+        />
+        <Entry
+          year="2011-2023"
+          degree="School Education (State Board)"
+          school="Burdwan Town School"
+          location="Bardhaman, WB"
+        />
       </div>
     </section>
   );

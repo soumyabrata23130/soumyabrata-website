@@ -1,72 +1,117 @@
+import Card from "./Card.jsx";
+
 export default function Skills() {
+  const languages = [
+    'C',
+    'Java',
+    'JavaScript',
+    'Python'
+  ];
+
+  const frontend = [
+    'CSS',
+    'HTML',
+    'JavaScript',
+    'React',
+    'Tailwind',
+    'Vite'
+  ];
+
+  const backend = [
+    'Express',
+    'Node.js',
+    'SQLite'
+  ];
+
+  const python = [
+    'Matplotlib',
+    'NumPy',
+    'Pandas',
+    'Tkinter'
+  ];
+
+  const operating_systems = [
+    'Android',
+    'Fedora Linux',
+    'Ubuntu LTS',
+    'Windows 11'
+  ];
+
+  const version_control = [
+    'Git',
+    'GitHub',
+    'GitLab'
+  ];
+
+  const others = [
+    'Chrome',
+    'Figma',
+    'Firefox',
+    'FreeCAD',
+    'Inkscape',
+    'VS Code'
+  ];
+
   return (
     <section id="skills">
       <h3 className="font-bold my-4 text-2xl text-center">Skills</h3>
       <div className="section-flex">
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Languages</h4>
-          <hr />
-          <ul className="tags">
-            <li>C</li>
-            <li>Java</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Backend</h4>
-          <hr />
-          <ul className="tags">
-            <li>Express</li>
-            <li>Node.js</li>
-            <li>SQLite</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Frontend</h4>
-          <hr />
-          <ul className="tags">
-            <li>Bootstrap</li>
-            <li>CSS</li>
-            <li>HTML</li>
-            <li>JavaScript</li>
-            <li>React</li>
-            <li>Tailwind</li>
-            <li>Vite</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Python Libraries</h4>
-          <hr />
-          <ul className="tags">
-            <li>Matplotlib</li>
-            <li>NumPy</li>
-            <li>Pandas</li>
-            <li>Tkinter</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Operating Systems</h4>
-          <hr />
-          <ul className="tags">
-            <li>Ubuntu (WSL)</li>
-            <li>Windows 11</li>
-          </ul>
-        </div>
-        <div className="card w-1/6 flex-auto rounded-xl">
-          <h4 className="font-bold text-lg text-center">Other Tools</h4>
-          <hr />
-          <ul className="tags">
-            <li>Figma</li>
-            <li>FreeCAD</li>
-            <li>Git</li>
-            <li>GitHub</li>
-            <li>Inkscape</li>
-            <li>Node.js</li>
-            <li>Vite</li>
-            <li>VS Code</li>
-          </ul>
-        </div>
+        <Card
+          title="Languages"
+          content={
+            <ul className="tags">
+              {languages.map(lang => <li>{lang}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Frontend"
+          content={
+            <ul className="tags">
+              {frontend.map(front => <li>{front}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Backend"
+          content={
+            <ul className="tags">
+              {backend.map(back => <li>{back}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Python Libraries"
+          content={
+            <ul className="tags">
+              {python.map(py => <li>{py}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Operating Systems"
+          content={
+            <ul className="tags">
+              {operating_systems.map(os => <li>{os}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Version Control"
+          content={
+            <ul className="tags">
+              {version_control.map(vc => <li>{vc}</li>)}
+            </ul>
+          }
+        />
+        <Card
+          title="Other Tools"
+          content={
+            <ul className="tags">
+              {others.map(ot => <li>{ot}</li>)}
+            </ul>
+          }
+        />
       </div>
     </section>
   );

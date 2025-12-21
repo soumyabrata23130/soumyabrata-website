@@ -16,7 +16,7 @@ nav {
 }
 
 select {
-  background: var(--foreground);
+  background: var(--hover);
 }
 
 .nav-menu {
@@ -29,7 +29,7 @@ select {
 }
 
 .nav-menu a:hover {
-  background: var(--background);
+  background: var(--hover);
   text-decoration: none;
 }
 

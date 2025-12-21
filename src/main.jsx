@@ -5,11 +5,11 @@ import Footer from "./footer/Footer.jsx";
 import Header from "./header/Header.jsx";
 
 import Hero from "./Hero.jsx";
-import About from "./About.jsx";
+// import About from "./archive/About.jsx";
 import Skills from "./Skills.jsx";
 import Projects from "./Projects.jsx";
 import Events from "./Events.jsx";
-//import Gaming from "./Gaming.jsx";
+//import Gaming from "./archive/Gaming.jsx";
 import Education from "./Education.jsx";
 import Personal from "./Personal.jsx";
 import Contact from "./Contact.jsx";
@@ -19,18 +19,18 @@ createRoot(document.getElementById("root")).render(
     <Header />
     <Hero />
     <hr />
-    <About />
-    <hr />
+    {/*<About />
+    <hr />*/}
     <Skills />
     <hr />
     <Projects />
+    <hr />
+    <Education />
     <hr />
     <Events />
     <hr />
     {/*<Gaming />
     <hr />*/}
-    <Education />
-    <hr />
     <Personal />
     <hr />
     <Contact />
